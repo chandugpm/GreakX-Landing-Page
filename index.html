@@ -1,298 +1,1476 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" itemscope itemtype="https://schema.org/WebSite">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GreakX — Next-Gen Tech Identity</title>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<title>GreakX.com — Own a Rare 6-Letter .COM for AI, Cybersecurity &amp; Deep Tech | $75K–$100K</title>
+<meta name="description" content="GreakX.com — premium 6-letter .COM domain for sale. Built for AI startups, cybersecurity platforms, quantum computing and deep tech brands. $75K–$100K. Escrow-protected. VishwaX Technologies Pvt Ltd.">
+<meta name="keywords" content="premium domain for sale, 6 letter com domain, AI brand domain, cybersecurity domain name, tech domain acquisition, brandable domain GreakX, buy domain AI startup, deep tech brand domain, domain investment 2025">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="author" content="K Rama Chandra, VishwaX Technologies Pvt Ltd">
+<link rel="canonical" href="https://greakx.com/">
+<meta property="og:title" content="GreakX.com — Premium 6-Letter .COM | AI · Cyber · Deep Tech | $75K–$100K">
+<meta property="og:description" content="Rare, brandable 6-letter .COM. Ideal for AI, cybersecurity, quantum and deep tech companies. Secure Escrow transfer.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://greakx.com/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="GreakX.com — Premium Tech Domain | $75K–$100K">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://greakx.com/#org","name":"VishwaX Technologies Pvt Ltd","url":"https://greakx.com","email":"vishwaxofficial@gmail.com","founder":{"@type":"Person","name":"K Rama Chandra"}},{"@type":"Product","name":"GreakX.com Premium Domain","offers":{"@type":"Offer","price":"75000","priceCurrency":"USD","availability":"https://schema.org/InStock"}},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Why is GreakX.com valuable?","acceptedAnswer":{"@type":"Answer","text":"GreakX.com is a rare 6-letter .COM fusing 3,400-year Greek authority with the X-factor of modern tech brands. Less than 0.1% availability in the premium market."}},{"@type":"Question","name":"What is the asking price?","acceptedAnswer":{"@type":"Answer","text":"$75,000–$100,000 USD, negotiable. All transactions via Escrow.com for full security."}}]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Orbitron:wght@700;900&family=Rajdhani:wght@400;500;600;700&family=Exo+2:ital,wght@0,200;0,300;0,400;0,600;0,700;1,300&family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+
 <style>
-  :root {
-    --bg: #030712;
-    --card: #0f172a;
-    --border: #1e293b;
-    --accent: #38bdf8;
-    --accent-glow: rgba(56, 189, 248, 0.3);
-    --text-main: #f8fafc;
-    --text-dim: #94a3b8;
-    --white: #ffffff;
-  }
+/* ══════════════════════════════════════════════
+   DESIGN SYSTEM
+══════════════════════════════════════════════ */
+:root{
+  --bg:         #010610;
+  --bg2:        #050e20;
+  --bg3:        #081528;
+  --bg4:        #0c1d36;
+  --cyan:       #00e5ff;
+  --cyan2:      #00b4d8;
+  --cyan3:      rgba(0,229,255,.12);
+  --cyan4:      rgba(0,229,255,.05);
+  --gold:       #c9a84c;
+  --gold2:      #f0c96b;
+  --gold3:      rgba(201,168,76,.1);
+  --green:      #00d68f;
+  --red:        #ff4757;
+  --white:      #e2eaff;
+  --dim:        #516080;
+  --dim2:       #8898b4;
+  --border:     rgba(0,229,255,.09);
+  --border2:    rgba(255,255,255,.04);
+  --radius:     4px;
+  --radius2:    8px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+body{background:var(--bg);color:var(--white);font-family:'Exo 2',sans-serif;overflow-x:hidden;cursor:none}
+a,button{cursor:none}
 
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+/* ══ CUSTOM CURSOR ══ */
+#cx{width:7px;height:7px;background:var(--cyan);border-radius:50%;position:fixed;pointer-events:none;z-index:9999;transform:translate(-50%,-50%);mix-blend-mode:screen;transition:width .22s,height .22s,background .22s}
+#cr{width:28px;height:28px;border:1px solid rgba(0,229,255,.4);border-radius:50%;position:fixed;pointer-events:none;z-index:9998;transform:translate(-50%,-50%)}
 
-  html { scroll-behavior: smooth; }
+/* ══ PAGE SYSTEM ══ */
+.page{display:none}.page.active{display:block}
 
-  body {
-    background: var(--bg);
-    color: var(--text-main);
-    font-family: 'Outfit', sans-serif;
-    line-height: 1.6;
-    overflow-x: hidden;
-  }
+/* ══ NAV ══ */
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:900;
+  height:64px;display:flex;align-items:center;justify-content:space-between;
+  padding:0 48px;
+  background:rgba(1,6,16,.9);
+  backdrop-filter:blur(24px) saturate(180%);
+  border-bottom:1px solid var(--border);
+}
+.nav-wm{
+  font-family:'Bebas Neue',sans-serif;font-size:1.6rem;letter-spacing:.12em;
+  color:var(--white);cursor:pointer;user-select:none;
+}
+.nav-wm .nx{
+  font-family:'Orbitron',monospace;font-size:1.5rem;font-weight:900;letter-spacing:-.02em;
+  background:linear-gradient(135deg,var(--cyan) 0%,var(--gold2) 100%);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+  filter:drop-shadow(0 0 8px rgba(0,229,255,.5));
+}
+.nav-links{display:flex;gap:0;list-style:none}
+.nav-links a{
+  font-family:'Rajdhani',sans-serif;font-weight:600;font-size:.72rem;
+  letter-spacing:.22em;text-transform:uppercase;color:var(--dim2);
+  padding:8px 16px;border-radius:var(--radius);transition:color .25s,background .25s;
+}
+.nav-links a:hover,.nav-links a.active{color:var(--cyan);background:var(--cyan4)}
+.nav-cta{
+  font-family:'Rajdhani',sans-serif;font-weight:700;font-size:.72rem;
+  letter-spacing:.2em;text-transform:uppercase;
+  background:linear-gradient(135deg,var(--cyan),var(--cyan2));
+  color:var(--bg);padding:10px 22px;border-radius:var(--radius);border:none;
+  box-shadow:0 0 20px rgba(0,229,255,.3);transition:all .3s;
+}
+.nav-cta:hover{box-shadow:0 0 36px rgba(0,229,255,.65);transform:translateY(-1px)}
 
-  /* AMBIENT BACKGROUND */
-  .glow-mesh {
-    position: fixed;
-    top: 0; left: 0; width: 100%; height: 100%;
-    background: 
-      radial-gradient(circle at 20% 20%, rgba(56, 189, 248, 0.05) 0%, transparent 40%),
-      radial-gradient(circle at 80% 80%, rgba(56, 189, 248, 0.05) 0%, transparent 40%);
-    z-index: -1;
-  }
+/* ══ SHARED ══ */
+.wrap{max-width:1160px;margin:0 auto;padding:0 44px}
+.kicker{font-family:'Rajdhani',sans-serif;font-size:.66rem;letter-spacing:.48em;text-transform:uppercase;color:var(--cyan);display:inline-block;margin-bottom:12px}
+.h2{font-family:'Cinzel',serif;font-size:clamp(1.6rem,2.8vw,2.4rem);font-weight:700;line-height:1.2;color:var(--white)}
+.h2 em,.h2 b{font-style:normal;color:var(--cyan)}
+.rule{width:48px;height:2px;background:linear-gradient(90deg,var(--cyan),var(--gold),transparent);margin-top:14px}
+.sec-hdr{text-align:center;margin-bottom:56px}
+.sec-hdr .rule{margin:14px auto 0}
+section{padding:92px 0;position:relative;overflow:hidden}
+.rv{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+.rv.on{opacity:1;transform:none}
+.rv.d1{transition-delay:.1s}.rv.d2{transition-delay:.2s}.rv.d3{transition-delay:.3s}
+.rv.d4{transition-delay:.38s}.rv.d5{transition-delay:.46s}.rv.d6{transition-delay:.54s}
 
-  /* NAVIGATION */
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.5rem 10%;
-    background: rgba(3, 7, 18, 0.8);
-    backdrop-filter: blur(12px);
-    border-bottom: 1px solid var(--border);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-  }
+/* ══════════════════════════════════════════════
+   HERO — with SCROLLING IMAGE BACKGROUND
+══════════════════════════════════════════════ */
+#hero{
+  min-height:100vh;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  position:relative;overflow:hidden;text-align:center;
+  padding:80px 24px 180px;
+}
 
-  .logo {
-    font-size: 1.8rem;
-    font-weight: 800;
-    letter-spacing: -0.02em;
-    color: var(--white);
-    text-decoration: none;
-  }
-  .logo span { color: var(--accent); }
+/* ── SCROLLING IMAGE BACKGROUND STRIPS ── */
+.img-bg{
+  position:absolute;inset:0;
+  display:flex;flex-direction:column;
+  gap:0;z-index:0;
+  overflow:hidden;
+}
+/* Dark overlay on top of strips */
+.img-bg-overlay{
+  position:absolute;inset:0;z-index:1;
+  background:
+    radial-gradient(ellipse 90% 60% at 50% 50%,rgba(1,6,16,.82) 0%,rgba(1,6,16,.6) 50%,rgba(1,6,16,.92) 100%),
+    linear-gradient(180deg,rgba(1,6,16,1) 0%,transparent 18%,transparent 82%,rgba(1,6,16,1) 100%);
+}
 
-  .nav-cta {
-    background: var(--accent);
-    color: var(--bg);
-    padding: 0.6rem 1.2rem;
-    border-radius: 8px;
-    font-weight: 600;
-    text-decoration: none;
-    font-size: 0.9rem;
-    transition: all 0.3s ease;
-  }
-  .nav-cta:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 20px var(--accent-glow);
-  }
+/* Each strip row */
+.strip-row{
+  flex:1;display:flex;align-items:center;
+  position:relative;overflow:hidden;
+  border-bottom:1px solid rgba(0,229,255,.04);
+}
+.strip-track{
+  display:flex;gap:0;white-space:nowrap;
+  animation:stripScroll 55s linear infinite;
+}
+.strip-track.rev{animation:stripScrollRev 55s linear infinite}
+.strip-track.slow{animation-duration:75s}
+.strip-track.fast{animation-duration:38s}
 
-  /* HERO SECTION */
-  .hero {
-    padding: 8rem 10% 4rem;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+@keyframes stripScroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@keyframes stripScrollRev{from{transform:translateX(-50%)}to{transform:translateX(0)}}
 
-  .badge {
-    background: rgba(56, 189, 248, 0.1);
-    color: var(--accent);
-    padding: 0.5rem 1rem;
-    border-radius: 100px;
-    font-size: 0.8rem;
-    font-weight: 600;
-    margin-bottom: 2rem;
-    border: 1px solid var(--accent-glow);
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-  }
+/* Individual image tile */
+.img-tile{
+  flex-shrink:0;width:220px;height:100%;
+  position:relative;overflow:hidden;
+  border-right:1px solid rgba(0,229,255,.04);
+}
+.img-tile svg{width:100%;height:100%;display:block}
 
-  .hero h1 {
-    font-size: clamp(4rem, 10vw, 8rem);
-    font-weight: 800;
-    line-height: 0.9;
-    margin-bottom: 1.5rem;
-    background: linear-gradient(to bottom, #fff 40%, #64748b);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
+/* ── URGENCY TOP BANNER ── */
+.urge{
+  position:absolute;top:0;left:0;right:0;z-index:10;
+  background:linear-gradient(90deg,var(--gold) 0%,#e8b94a 50%,var(--gold) 100%);
+  background-size:200%;animation:goldShift 4s linear infinite;
+  padding:9px 24px;text-align:center;
+  font-family:'Rajdhani',sans-serif;font-size:.72rem;font-weight:700;letter-spacing:.26em;text-transform:uppercase;color:var(--bg);
+}
+@keyframes goldShift{0%,100%{background-position:0%}50%{background-position:100%}}
 
-  .hero p {
-    font-size: 1.25rem;
-    color: var(--text-dim);
-    max-width: 600px;
-    margin-bottom: 3rem;
-  }
+/* ── HERO CONTENT ── */
+.hero-content{
+  position:relative;z-index:2;
+  display:flex;flex-direction:column;align-items:center;
+}
 
-  .hero-btns {
-    display: flex;
-    gap: 1rem;
-  }
+/* STATUS CHIP */
+.status-chip{
+  display:inline-flex;align-items:center;gap:8px;
+  background:rgba(1,6,16,.6);backdrop-filter:blur(12px);
+  border:1px solid rgba(0,229,255,.22);
+  padding:7px 18px;border-radius:40px;margin-bottom:26px;
+  opacity:0;animation:fadeUp .7s .1s ease both;
+}
+.sc-dot{width:6px;height:6px;background:var(--green);border-radius:50%;box-shadow:0 0 8px var(--green);animation:blink 2s ease-in-out infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.2}}
+.sc-txt{font-family:'Rajdhani',sans-serif;font-size:.68rem;letter-spacing:.26em;text-transform:uppercase;color:var(--cyan)}
 
-  .btn {
-    padding: 1rem 2.5rem;
-    border-radius: 12px;
-    font-weight: 600;
-    text-decoration: none;
-    transition: all 0.3s ease;
-  }
-  .btn-p { background: var(--white); color: var(--bg); }
-  .btn-s { border: 1px solid var(--border); color: var(--white); }
-  .btn-p:hover { transform: scale(1.05); }
-  .btn-s:hover { background: rgba(255,255,255,0.05); }
+/* ── GREAK X TITLE — SMALLER + NEW FONT ── */
+.hero-title-wrap{
+  position:relative;margin-bottom:30px;
+  opacity:0;animation:titleIn 1s .2s cubic-bezier(.16,1,.3,1) both;
+}
+@keyframes titleIn{from{opacity:0;transform:translateY(20px) scale(.97)}to{opacity:1;transform:none}}
 
-  /* PRICE CARD */
-  .price-banner {
-    margin-top: 4rem;
-    background: var(--card);
-    border: 1px solid var(--border);
-    padding: 2rem;
-    border-radius: 24px;
-    display: inline-flex;
-    align-items: center;
-    gap: 2rem;
-  }
+.hero-title{
+  font-family:'Bebas Neue',sans-serif;
+  font-size:clamp(3rem,9vw,7.5rem);
+  letter-spacing:.14em;
+  line-height:.92;
+  color:var(--white);
+  text-shadow:0 0 60px rgba(0,229,255,.08);
+  position:relative;display:inline-block;
+}
+.hero-title .grk{
+  color:var(--white);
+  text-shadow:0 2px 40px rgba(0,229,255,.15);
+}
+.hero-title .xt{
+  font-family:'Orbitron',monospace;
+  font-weight:900;
+  font-size:.9em;
+  letter-spacing:-.02em;
+  background:linear-gradient(135deg,#fff 0%,var(--cyan) 30%,var(--gold2) 70%,var(--cyan) 100%);
+  background-size:300% 300%;
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+  animation:xGrad 5s ease-in-out infinite;
+  filter:drop-shadow(0 0 30px rgba(0,229,255,.55));
+  display:inline-block;
+}
+@keyframes xGrad{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
 
-  .price-val {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 2rem;
-    color: var(--accent);
-    font-weight: 700;
-  }
+/* domain tag under title */
+.domain-tag{
+  display:flex;align-items:center;justify-content:center;gap:6px;
+  font-family:'Orbitron',monospace;font-size:.7rem;font-weight:700;
+  letter-spacing:.3em;color:rgba(255,255,255,.35);
+  margin-top:6px;text-transform:uppercase;
+}
+.domain-tag span{color:rgba(0,229,255,.5)}
 
-  /* GRID FEATURES */
-  section { padding: 4rem 10%; }
-  .section-title { margin-bottom: 3rem; font-size: 2rem; text-align: center; }
+/* Hero value prop */
+.hero-vp{
+  font-family:'Cinzel',serif;font-size:clamp(.92rem,2vw,1.2rem);
+  color:var(--white);max-width:640px;line-height:1.55;
+  opacity:0;animation:fadeUp .7s .38s ease both;margin-bottom:28px;
+}
+.hero-vp strong{color:var(--cyan)}
 
-  .features {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1.5rem;
-  }
+/* PRICE BADGE */
+.price-badge{
+  display:inline-flex;flex-direction:column;align-items:center;
+  background:rgba(1,6,16,.7);backdrop-filter:blur(14px);
+  border:1px solid rgba(201,168,76,.45);
+  padding:16px 44px;border-radius:var(--radius2);
+  margin-bottom:32px;
+  opacity:0;animation:fadeUp .7s .48s ease both;
+  box-shadow:0 0 44px rgba(201,168,76,.1),inset 0 1px 0 rgba(201,168,76,.15);
+  position:relative;overflow:hidden;
+}
+.price-badge::before{
+  content:'';position:absolute;top:0;left:-100%;width:200%;height:1px;
+  background:linear-gradient(90deg,transparent,var(--gold),transparent);
+  animation:topLine 3s ease-in-out infinite;
+}
+@keyframes topLine{0%{left:-100%}100%{left:100%}}
+.pb-lbl{font-family:'Rajdhani',sans-serif;font-size:.64rem;letter-spacing:.42em;text-transform:uppercase;color:var(--gold);margin-bottom:5px}
+.pb-val{font-family:'Orbitron',monospace;font-size:clamp(1.4rem,2.8vw,2.2rem);font-weight:900;color:var(--gold2);letter-spacing:-.02em;line-height:1}
+.pb-note{font-size:.7rem;color:rgba(201,168,76,.55);margin-top:5px;letter-spacing:.08em}
 
-  .f-card {
-    background: var(--card);
-    padding: 2.5rem;
-    border-radius: 20px;
-    border: 1px solid var(--border);
-    transition: border 0.3s ease;
-  }
-  .f-card:hover { border-color: var(--accent); }
-  .f-card h3 { margin-bottom: 1rem; color: var(--white); }
-  .f-card p { color: var(--text-dim); font-size: 0.95rem; }
+/* CTA ROW */
+.cta-row{
+  display:flex;gap:12px;flex-wrap:wrap;justify-content:center;
+  opacity:0;animation:fadeUp .7s .58s ease both;margin-bottom:40px;
+}
+.btn-p{
+  font-family:'Rajdhani',sans-serif;font-weight:700;font-size:.82rem;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--bg);background:linear-gradient(135deg,var(--cyan),var(--cyan2));
+  padding:15px 38px;border-radius:var(--radius);
+  box-shadow:0 0 28px rgba(0,229,255,.38),0 4px 20px rgba(0,0,0,.4);
+  transition:all .3s;position:relative;overflow:hidden;
+}
+.btn-p::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,transparent,rgba(255,255,255,.25),transparent);transform:translateX(-100%);transition:transform .5s}
+.btn-p:hover{box-shadow:0 0 50px rgba(0,229,255,.7),0 8px 30px rgba(0,0,0,.5);transform:translateY(-3px)}
+.btn-p:hover::after{transform:translateX(100%)}
+.btn-g{
+  font-family:'Rajdhani',sans-serif;font-weight:600;font-size:.82rem;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--cyan);background:rgba(1,6,16,.6);backdrop-filter:blur(10px);
+  padding:14px 36px;border:1px solid rgba(0,229,255,.28);border-radius:var(--radius);
+  transition:all .3s;
+}
+.btn-g:hover{border-color:var(--cyan);background:var(--cyan4);transform:translateY(-2px)}
 
-  /* ANALYTICS TERMINAL */
-  .terminal {
-    background: #000;
-    border-radius: 12px;
-    padding: 1.5rem;
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 0.85rem;
-    border: 1px solid var(--border);
-    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
-    max-width: 800px;
-    margin: 4rem auto;
-  }
-  .t-header { display: flex; gap: 6px; margin-bottom: 1rem; }
-  .t-dot { width: 12px; height: 12px; border-radius: 50%; }
-  .green { color: #4ade80; }
-  .blue { color: var(--accent); }
+/* TRUST BADGES */
+.trust-row{
+  display:flex;gap:8px;flex-wrap:wrap;justify-content:center;
+  opacity:0;animation:fadeUp .7s .68s ease both;
+}
+.tb{
+  display:flex;align-items:center;gap:6px;
+  font-family:'Rajdhani',sans-serif;font-size:.65rem;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--dim2);padding:5px 13px;
+  border:1px solid var(--border);border-radius:40px;
+  background:rgba(1,6,16,.5);backdrop-filter:blur(8px);
+}
+.tb .dot{width:5px;height:5px;background:var(--green);border-radius:50%;box-shadow:0 0 5px var(--green)}
 
-  /* FOOTER */
-  footer {
-    padding: 4rem 10%;
-    border-top: 1px solid var(--border);
-    text-align: center;
-    background: rgba(15, 23, 42, 0.5);
-  }
-  .contact-link { color: var(--accent); text-decoration: none; font-weight: 600; }
+/* STATS BAR */
+.stats-bar{
+  position:absolute;bottom:0;left:0;right:0;
+  display:grid;grid-template-columns:repeat(4,1fr);
+  border-top:1px solid var(--border);
+  opacity:0;animation:fadeUp .7s .88s ease both;
+  backdrop-filter:blur(8px);
+  background:rgba(1,6,16,.65);
+}
+.sb{padding:20px;text-align:center;border-right:1px solid var(--border)}
+.sb:last-child{border-right:none}
+.sb-v{font-family:'Orbitron',monospace;font-size:1.5rem;font-weight:700;color:var(--cyan);line-height:1}
+.sb-l{font-family:'Rajdhani',sans-serif;font-size:.62rem;letter-spacing:.15em;text-transform:uppercase;color:var(--dim);margin-top:4px}
 
-  @media (max-width: 768px) {
-    .hero h1 { font-size: 3.5rem; }
-    .price-banner { flex-direction: column; gap: 0.5rem; }
-  }
+/* ══ MARQUEE 1: TECH ICONS ══ */
+.mq1-wrap{
+  background:var(--bg2);border-top:1px solid var(--border);border-bottom:1px solid var(--border);
+  overflow:hidden;position:relative;padding:24px 0;
+}
+.mq1-wrap::before,.mq1-wrap::after{content:'';position:absolute;top:0;bottom:0;width:140px;z-index:2;pointer-events:none}
+.mq1-wrap::before{left:0;background:linear-gradient(90deg,var(--bg2),transparent)}
+.mq1-wrap::after{right:0;background:linear-gradient(270deg,var(--bg2),transparent)}
+.mq-track{display:flex;gap:0;width:max-content;animation:mscroll 44s linear infinite}
+.mq-track.rev{animation:mscrollR 44s linear infinite}
+.mq-track:hover{animation-play-state:paused}
+@keyframes mscroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@keyframes mscrollR{from{transform:translateX(-50%)}to{transform:translateX(0)}}
+
+.tech-pill{
+  display:inline-flex;flex-direction:column;align-items:center;gap:9px;
+  padding:18px 22px;margin:0 7px;
+  border:1px solid var(--border);border-radius:var(--radius2);
+  background:var(--bg3);white-space:nowrap;
+  transition:all .32s;position:relative;overflow:hidden;
+}
+.tech-pill::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,var(--cyan4),transparent);opacity:0;transition:opacity .32s}
+.tech-pill:hover{border-color:rgba(0,229,255,.3);transform:translateY(-4px);box-shadow:0 10px 30px rgba(0,229,255,.12)}
+.tech-pill:hover::before{opacity:1}
+.tp-icon{width:40px;height:40px}
+.tp-name{font-family:'Rajdhani',sans-serif;font-weight:700;font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--dim2);transition:color .3s}
+.tech-pill:hover .tp-name{color:var(--cyan)}
+.tp-bar{position:absolute;bottom:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--cyan),var(--gold));transform:scaleX(0);transition:transform .35s;transform-origin:left}
+.tech-pill:hover .tp-bar{transform:scaleX(1)}
+
+/* ══ MARQUEE 2: TOP DOMAIN VALUES ══ */
+.mq2-wrap{
+  background:var(--bg3);border-bottom:1px solid var(--border);
+  overflow:hidden;position:relative;padding:0;
+}
+.mq2-wrap::before,.mq2-wrap::after{content:'';position:absolute;top:0;bottom:0;width:120px;z-index:2;pointer-events:none}
+.mq2-wrap::before{left:0;background:linear-gradient(90deg,var(--bg3),transparent)}
+.mq2-wrap::after{right:0;background:linear-gradient(270deg,var(--bg3),transparent)}
+.mq2-label{
+  position:absolute;left:0;top:0;bottom:0;z-index:3;
+  background:var(--bg3);border-right:1px solid var(--border);
+  display:flex;align-items:center;padding:0 20px;
+  font-family:'Rajdhani',sans-serif;font-size:.6rem;letter-spacing:.3em;text-transform:uppercase;color:var(--cyan);
+  white-space:nowrap;
+}
+.mq2-inner{overflow:hidden;padding-left:180px}
+.mq2-track{display:flex;gap:0;width:max-content;animation:mscroll 32s linear infinite}
+.mq2-track:hover{animation-play-state:paused}
+.dom-pill{
+  display:inline-flex;align-items:center;gap:12px;
+  padding:14px 22px;margin:0 6px;
+  border-left:1px solid var(--border);border-right:1px solid var(--border);
+  white-space:nowrap;transition:background .25s;
+}
+.dom-pill:hover{background:var(--cyan4)}
+.dom-name{font-family:'Orbitron',monospace;font-size:.72rem;font-weight:700;color:var(--white);letter-spacing:.05em}
+.dom-val{font-family:'Rajdhani',sans-serif;font-size:.64rem;font-weight:600;color:var(--gold);letter-spacing:.12em}
+.dom-cat{font-size:.6rem;color:var(--dim);letter-spacing:.1em;font-family:'Rajdhani',sans-serif;padding:2px 8px;border:1px solid var(--border);border-radius:40px}
+
+/* ══ WHY SECTION ══ */
+#value{background:var(--bg)}
+.val-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.val-visual{position:relative;display:flex;align-items:center;justify-content:center}
+
+/* ABSTRACT CANVAS VISUAL */
+.val-canvas-wrap{
+  width:380px;height:380px;position:relative;
+  border:1px solid var(--border);border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  background:radial-gradient(circle at 35% 35%,rgba(0,229,255,.06),transparent 65%);
+}
+.val-canvas-wrap::before,.val-canvas-wrap::after{
+  content:'';position:absolute;border-radius:50%;border:1px solid var(--border);animation:orbPulse 6s ease-in-out infinite;
+}
+.val-canvas-wrap::before{inset:-24px;animation-delay:0s}
+.val-canvas-wrap::after{inset:-48px;opacity:.5;animation-delay:2s}
+@keyframes orbPulse{0%,100%{opacity:.4;transform:scale(1)}50%{opacity:.8;transform:scale(1.02)}}
+
+.val-center-x{
+  font-family:'Orbitron',monospace;font-weight:900;font-size:5.5rem;
+  background:linear-gradient(135deg,var(--white) 0%,var(--cyan) 40%,var(--gold2) 100%);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+  filter:drop-shadow(0 0 24px rgba(0,229,255,.4));
+  animation:floatX 5s ease-in-out infinite;
+}
+@keyframes floatX{0%,100%{transform:translateY(0) scale(1)}50%{transform:translateY(-8px) scale(1.03)}}
+
+/* Val ring decorations */
+.val-ring{
+  position:absolute;border-radius:50%;
+  background:repeating-conic-gradient(rgba(0,229,255,.04) 0deg 6deg,transparent 6deg 16deg);
+  animation:spinRing 40s linear infinite;
+}
+.vr1{inset:30px}
+.vr2{inset:80px;animation-direction:reverse;animation-duration:28s}
+@keyframes spinRing{to{transform:rotate(360deg)}}
+
+/* Orbit dots */
+.orbit-dot{
+  position:absolute;width:7px;height:7px;border-radius:50%;
+  background:var(--cyan);box-shadow:0 0 10px var(--cyan);
+  animation:orbitAnim 8s linear infinite;
+}
+.orbit-dot:nth-child(2){animation-delay:-2.6s;background:var(--gold);box-shadow:0 0 10px var(--gold);animation-duration:12s}
+.orbit-dot:nth-child(3){animation-delay:-5.3s;animation-duration:10s;background:rgba(0,229,255,.6)}
+@keyframes orbitAnim{
+  0%{top:50%;left:50%;transform:translate(-50%,-50%) rotate(0deg) translateX(150px) rotate(0deg)}
+  100%{top:50%;left:50%;transform:translate(-50%,-50%) rotate(360deg) translateX(150px) rotate(-360deg)}
+}
+
+.val-points{display:flex;flex-direction:column;gap:0}
+.vp{padding:22px 0;border-bottom:1px solid var(--border2);display:flex;gap:16px;align-items:flex-start;transition:padding-left .3s;cursor:default}
+.vp:last-child{border-bottom:none}
+.vp:hover{padding-left:8px}
+.vp-n{font-family:'Orbitron',monospace;font-size:.65rem;font-weight:700;color:var(--cyan);opacity:.45;min-width:24px;margin-top:4px}
+.vp-c{}
+.vp-t{font-family:'Cinzel',serif;font-size:.98rem;font-weight:700;color:var(--white);margin-bottom:5px}
+.vp-d{font-size:.85rem;color:var(--dim2);line-height:1.78}
+
+/* ══ USE CASES ══ */
+#usecases{background:var(--bg2)}
+.uc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.uc-card{
+  background:var(--bg3);border:1px solid var(--border);
+  padding:34px 26px;border-radius:var(--radius2);
+  position:relative;overflow:hidden;
+  transition:border-color .32s,box-shadow .32s,transform .32s;
+  will-change:transform;
+}
+.uc-card::after{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--cyan),var(--gold));transform:scaleX(0);transform-origin:left;transition:transform .4s}
+.uc-card:hover{border-color:rgba(0,229,255,.28);box-shadow:0 24px 60px rgba(0,0,0,.5),0 0 30px rgba(0,229,255,.08)}
+.uc-card:hover::after{transform:scaleX(1)}
+.uc-ico{width:50px;height:50px;border-radius:var(--radius);background:var(--cyan4);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;margin-bottom:18px;transition:border-color .3s}
+.uc-card:hover .uc-ico{border-color:rgba(0,229,255,.4)}
+.uc-tag{font-family:'Rajdhani',sans-serif;font-size:.6rem;letter-spacing:.28em;text-transform:uppercase;color:var(--cyan);margin-bottom:6px;display:block}
+.uc-title{font-family:'Cinzel',serif;font-size:1rem;font-weight:700;color:var(--white);margin-bottom:9px}
+.uc-text{font-size:.82rem;color:var(--dim2);line-height:1.75}
+
+/* ══ COMPARABLE SALES ══ */
+#comparable{background:var(--bg)}
+.comp-note{font-size:.82rem;color:var(--dim2);text-align:center;margin-bottom:36px;line-height:1.65;max-width:660px;margin-left:auto;margin-right:auto}
+.comp-note strong{color:var(--white)}
+.tbl-wrap{overflow-x:auto;border:1px solid var(--border);border-radius:var(--radius2)}
+table.comp{width:100%;border-collapse:collapse;font-size:.82rem;min-width:700px}
+table.comp thead th{font-family:'Rajdhani',sans-serif;font-size:.62rem;letter-spacing:.26em;text-transform:uppercase;color:var(--cyan);padding:14px 18px;background:var(--bg3);border-bottom:1px solid var(--border);text-align:left;white-space:nowrap}
+table.comp tbody td{padding:13px 18px;border-bottom:1px solid var(--border2);color:var(--dim2);vertical-align:middle}
+table.comp tbody tr:last-child td{border-bottom:none}
+table.comp tbody tr:hover td{background:var(--cyan4)}
+.cd{font-family:'Orbitron',monospace;font-size:.78rem;font-weight:700;color:var(--white)}
+.cp{font-family:'Orbitron',monospace;font-size:.82rem;font-weight:700;color:var(--gold2)}
+.cr{display:inline-flex;align-items:center;gap:4px;font-family:'Rajdhani',sans-serif;font-size:.64rem;letter-spacing:.1em;padding:2px 9px;border-radius:40px}
+.cr.hi{background:rgba(0,214,143,.09);color:var(--green);border:1px solid rgba(0,214,143,.2)}
+.cr.md{background:rgba(255,165,0,.07);color:#f4a261;border:1px solid rgba(255,165,0,.2)}
+.gx-row td{background:rgba(201,168,76,.05)!important;color:var(--white)!important}
+.gx-row td:first-child{border-left:3px solid var(--gold)}
+.tbl-foot td{font-size:.69rem;color:var(--dim);font-style:italic;background:var(--bg3)!important;padding:11px 18px;border-top:1px solid var(--border)!important}
+
+/* ══ PRICING ══ */
+#pricing{background:var(--bg2)}
+.price-wrap{display:grid;grid-template-columns:1fr 1.1fr;gap:40px;align-items:start}
+.price-card{
+  background:linear-gradient(160deg,rgba(201,168,76,.08),rgba(201,168,76,.02));
+  border:1px solid rgba(201,168,76,.32);
+  padding:48px 40px;border-radius:var(--radius2);text-align:center;position:relative;overflow:hidden;
+}
+.price-card::before{content:'PREMIUM ASSET';position:absolute;top:24px;right:-28px;transform:rotate(45deg);background:var(--gold);color:var(--bg);font-family:'Rajdhani',sans-serif;font-size:.56rem;font-weight:700;letter-spacing:.2em;padding:5px 40px}
+.pc-label{font-family:'Rajdhani',sans-serif;font-size:.65rem;letter-spacing:.4em;text-transform:uppercase;color:var(--gold);margin-bottom:12px}
+.pc-price{font-family:'Orbitron',monospace;font-weight:900;font-size:clamp(2.2rem,4.5vw,3.4rem);line-height:1;color:var(--gold2);margin-bottom:6px}
+.pc-sub{font-size:.78rem;color:rgba(201,168,76,.55);margin-bottom:26px}
+.pc-items{list-style:none;text-align:left;display:flex;flex-direction:column;gap:11px;margin-bottom:30px}
+.pc-items li{display:flex;align-items:flex-start;gap:9px;font-size:.83rem;color:var(--dim2)}
+.pc-items li::before{content:'✓';color:var(--green);font-size:.75rem;flex-shrink:0;margin-top:2px}
+.btn-acquire{display:block;width:100%;font-family:'Rajdhani',sans-serif;font-weight:700;font-size:.86rem;letter-spacing:.22em;text-transform:uppercase;color:var(--bg);background:linear-gradient(135deg,var(--gold),var(--gold2));padding:15px;border-radius:var(--radius);border:none;box-shadow:0 0 26px rgba(201,168,76,.3);transition:all .3s}
+.btn-acquire:hover{box-shadow:0 0 46px rgba(201,168,76,.6);transform:translateY(-2px)}
+
+.price-right{display:flex;flex-direction:column;gap:14px}
+.pi-box{background:var(--bg3);border:1px solid var(--border);padding:24px;border-radius:var(--radius)}
+.pi-title{font-family:'Cinzel',serif;font-size:.98rem;font-weight:700;color:var(--white);margin-bottom:10px;display:flex;align-items:center;gap:9px}
+.pi-text{font-size:.83rem;color:var(--dim2);line-height:1.75}
+.steps{display:flex;flex-direction:column;gap:0;margin-top:6px}
+.step{display:flex;gap:12px;padding:11px 0;border-bottom:1px solid var(--border2)}
+.step:last-child{border-bottom:none;padding-bottom:0}
+.step-n{width:22px;height:22px;border-radius:50%;border:1px solid var(--cyan);display:flex;align-items:center;justify-content:center;font-family:'Orbitron',monospace;font-size:.58rem;font-weight:700;color:var(--cyan);flex-shrink:0}
+.step-t{font-size:.8rem;color:var(--white);font-weight:500;margin-bottom:2px}
+.step-d{font-size:.74rem;color:var(--dim);line-height:1.5}
+
+/* ══ CONTACT FORM ══ */
+#contact{background:var(--bg)}
+.ct-grid{display:grid;grid-template-columns:1fr 1.5fr;gap:52px;align-items:start}
+.ct-info-title{font-family:'Cinzel',serif;font-size:1.55rem;font-weight:700;line-height:1.3;color:var(--white);margin-bottom:14px}
+.ct-info-title em{font-style:normal;color:var(--cyan)}
+.ct-info-text{font-size:.87rem;color:var(--dim2);line-height:1.82;margin-bottom:26px}
+.dbox{background:var(--bg3);border:1px solid var(--border);padding:20px;border-radius:var(--radius);margin-bottom:14px}
+.dl{font-family:'Rajdhani',sans-serif;font-size:.6rem;letter-spacing:.32em;text-transform:uppercase;color:var(--dim);margin-bottom:4px}
+.dv{font-family:'Rajdhani',sans-serif;font-size:.92rem;font-weight:600;color:var(--cyan)}
+.dn{font-size:.73rem;color:var(--dim);margin-top:3px}
+.disc-box{background:rgba(201,168,76,.04);border:1px solid rgba(201,168,76,.18);padding:18px;border-radius:var(--radius)}
+.disc-t{font-family:'Rajdhani',sans-serif;font-size:.6rem;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);margin-bottom:6px}
+.disc-d{font-size:.74rem;color:rgba(201,168,76,.62);line-height:1.7}
+
+.form-card{background:var(--bg3);border:1px solid var(--border);padding:42px 38px;border-radius:var(--radius2);position:relative}
+.form-card::before{content:'GX INQUIRY PORTAL';position:absolute;top:-9px;left:26px;background:var(--bg3);padding:0 10px;font-family:'Rajdhani',sans-serif;font-size:.58rem;letter-spacing:.32em;color:var(--cyan)}
+.ft{font-family:'Cinzel',serif;font-size:1.05rem;font-weight:700;color:var(--white);margin-bottom:3px}
+.fs{font-size:.76rem;color:var(--dim);margin-bottom:26px}
+.fg{margin-bottom:15px}
+.fr2{display:grid;grid-template-columns:1fr 1fr;gap:11px}
+.fl{font-family:'Rajdhani',sans-serif;font-size:.6rem;letter-spacing:.22em;text-transform:uppercase;color:var(--dim);margin-bottom:6px;display:block}
+.fc{width:100%;background:rgba(255,255,255,.025);border:1px solid var(--border);color:var(--white);padding:11px 14px;font-family:'Exo 2',sans-serif;font-size:.86rem;border-radius:var(--radius);outline:none;transition:border-color .28s,background .28s}
+.fc:focus{border-color:rgba(0,229,255,.5);background:rgba(0,229,255,.04)}
+.fc::placeholder{color:rgba(255,255,255,.16)}
+select.fc{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='7'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%2300e5ff' stroke-width='1.5' fill='none'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center}
+select.fc option{background:#081528;color:#e2eaff}
+textarea.fc{resize:vertical;min-height:88px}
+.fchk{display:flex;align-items:flex-start;gap:8px}
+.fchk input{margin-top:4px;accent-color:var(--cyan);flex-shrink:0}
+.fchk label{font-size:.72rem;color:var(--dim);line-height:1.55}
+.fsub{width:100%;background:linear-gradient(135deg,var(--cyan),var(--cyan2));color:var(--bg);border:none;padding:14px;font-family:'Rajdhani',sans-serif;font-weight:700;font-size:.84rem;letter-spacing:.22em;text-transform:uppercase;border-radius:var(--radius);box-shadow:0 0 20px rgba(0,229,255,.25);transition:all .3s;margin-top:5px;position:relative;overflow:hidden}
+.fsub::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,transparent,rgba(255,255,255,.2),transparent);transform:translateX(-100%);transition:transform .5s}
+.fsub:hover{box-shadow:0 0 40px rgba(0,229,255,.6);transform:translateY(-1px)}
+.fsub:hover::after{transform:translateX(100%)}
+.fmsg{display:none;margin-top:12px;padding:13px;background:rgba(0,214,143,.07);border:1px solid rgba(0,214,143,.3);font-size:.78rem;color:var(--green);text-align:center;border-radius:var(--radius)}
+.ferr{display:none;margin-top:12px;padding:13px;background:rgba(255,71,87,.07);border:1px solid rgba(255,71,87,.25);font-size:.78rem;color:var(--red);text-align:center;border-radius:var(--radius)}
+
+/* ══ FOOTER ══ */
+footer{background:var(--bg2);border-top:1px solid var(--border);padding:44px 0 24px}
+.ft-g{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:36px;margin-bottom:34px}
+.ft-wm{font-family:'Bebas Neue',sans-serif;font-size:1.4rem;letter-spacing:.12em;color:var(--white);margin-bottom:8px}
+.ft-wm .nx{font-family:'Orbitron',monospace;font-size:1.3rem;font-weight:900;background:linear-gradient(135deg,var(--cyan),var(--gold));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.ft-tag{font-size:.78rem;color:var(--dim);line-height:1.65;max-width:220px;margin-top:8px}
+.ft-ct{font-family:'Rajdhani',sans-serif;font-size:.62rem;letter-spacing:.3em;text-transform:uppercase;color:var(--cyan);margin-bottom:12px}
+.ft-links{list-style:none;display:flex;flex-direction:column;gap:8px}
+.ft-links a{font-size:.78rem;color:var(--dim);transition:color .25s}
+.ft-links a:hover{color:var(--cyan)}
+.ft-bot{border-top:1px solid var(--border2);padding-top:20px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px}
+.ft-copy{font-size:.67rem;color:var(--dim)}
+.ft-badge{font-family:'Rajdhani',sans-serif;font-size:.58rem;letter-spacing:.2em;text-transform:uppercase;color:var(--dim);border:1px solid var(--border2);padding:4px 11px;border-radius:40px}
+
+/* ══════════════════════════════════════════════
+   POLICY PAGES
+══════════════════════════════════════════════ */
+.pol-hero{
+  padding:72px 0 56px;text-align:center;
+  background:linear-gradient(180deg,var(--bg2),var(--bg));
+  border-bottom:1px solid var(--border);position:relative;overflow:hidden;
+}
+.pol-hero::before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(0,229,255,.022) 1px,transparent 1px),linear-gradient(90deg,rgba(0,229,255,.022) 1px,transparent 1px);background-size:54px 54px}
+.pol-icon{font-size:2.5rem;display:block;margin-bottom:16px;position:relative;z-index:1}
+.pol-h1{font-family:'Cinzel',serif;font-size:clamp(1.7rem,3.5vw,2.6rem);font-weight:700;color:var(--white);margin-bottom:12px;position:relative;z-index:1}
+.pol-h1 em{font-style:normal;color:var(--cyan)}
+.pol-meta{font-size:.73rem;color:var(--dim2);display:flex;justify-content:center;align-items:center;gap:12px;flex-wrap:wrap;position:relative;z-index:1}
+.pm-dot{width:3px;height:3px;background:var(--border);border-radius:50%;display:inline-block}
+.pol-back{display:inline-flex;align-items:center;gap:7px;font-family:'Rajdhani',sans-serif;font-size:.68rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--dim2);background:var(--bg3);border:1px solid var(--border);padding:8px 16px;border-radius:var(--radius);margin-top:22px;transition:color .25s,border-color .25s;position:relative;z-index:1}
+.pol-back:hover{color:var(--cyan);border-color:var(--cyan)}
+.pol-body{padding:68px 44px;max-width:880px;margin:0 auto}
+.pol-sec{margin-bottom:48px}
+.pol-stitle{font-family:'Cinzel',serif;font-size:1.08rem;font-weight:700;color:var(--white);margin-bottom:13px;display:flex;align-items:center;gap:11px;padding-bottom:11px;border-bottom:1px solid var(--border)}
+.ps-b{font-family:'Rajdhani',sans-serif;font-size:.6rem;letter-spacing:.28em;color:var(--cyan);background:var(--cyan4);border:1px solid var(--border);padding:3px 9px;border-radius:2px;white-space:nowrap}
+.pol-p{font-size:.87rem;color:var(--dim2);line-height:1.85;margin-bottom:12px}
+.pol-p strong{color:var(--white);font-weight:500}
+.pol-list{list-style:none;display:flex;flex-direction:column;gap:10px;margin:13px 0}
+.pol-list li{font-size:.84rem;color:var(--dim2);line-height:1.72;padding-left:17px;position:relative}
+.pol-list li::before{content:'▸';position:absolute;left:0;color:var(--cyan);font-size:.62rem;top:4px}
+.pol-box{background:var(--bg3);border:1px solid var(--border);border-left:3px solid var(--cyan);padding:19px 22px;margin:15px 0;border-radius:0 var(--radius) var(--radius) 0}
+.pol-box.gold{border-left-color:var(--gold)}
+.pol-box.red{border-left-color:var(--red)}
+.pb-t{font-family:'Rajdhani',sans-serif;font-size:.62rem;letter-spacing:.27em;text-transform:uppercase;color:var(--cyan);margin-bottom:6px}
+.pol-box.gold .pb-t{color:var(--gold)}
+.pol-box.red .pb-t{color:var(--red)}
+.pb-text{font-size:.82rem;color:var(--dim2);line-height:1.72}
+.pol-div{height:1px;background:linear-gradient(90deg,transparent,var(--border),transparent);margin:38px 0}
+.pol-g2{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:15px 0}
+.pg-c{background:var(--bg3);border:1px solid var(--border);padding:19px;border-radius:var(--radius)}
+.pg-ic{font-size:1.25rem;margin-bottom:8px}
+.pg-t{font-family:'Rajdhani',sans-serif;font-size:.78rem;font-weight:600;letter-spacing:.1em;color:var(--white);margin-bottom:4px}
+.pg-d{font-size:.75rem;color:var(--dim2);line-height:1.62}
+.pol-tbl{width:100%;border-collapse:collapse;margin:15px 0;font-size:.8rem;border:1px solid var(--border);border-radius:var(--radius2);overflow:hidden}
+.pol-tbl thead th{font-family:'Rajdhani',sans-serif;font-size:.61rem;letter-spacing:.24em;text-transform:uppercase;color:var(--cyan);padding:12px 17px;background:var(--bg3);border-bottom:1px solid var(--border);text-align:left}
+.pol-tbl tbody td{padding:11px 17px;border-bottom:1px solid var(--border2);color:var(--dim2);vertical-align:top;line-height:1.5}
+.pol-tbl tbody tr:last-child td{border-bottom:none}
+.pol-tbl tbody tr:hover td{background:var(--cyan4)}
+
+/* ══ ANIMATIONS ══ */
+@keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+@keyframes fadeDown{from{opacity:0;transform:translateY(-14px)}to{opacity:1;transform:none}}
+
+/* ══ RESPONSIVE ══ */
+@media(max-width:980px){
+  nav{padding:0 18px}.nav-links{display:none}
+  .wrap,.pol-body{padding-left:18px;padding-right:18px}
+  .val-grid,.price-wrap,.ct-grid,.ft-g,.uc-grid,.pol-g2{grid-template-columns:1fr}
+  .fr2{grid-template-columns:1fr}
+  .val-canvas-wrap{width:260px;height:260px}
+  .stats-bar{grid-template-columns:1fr 1fr}
+  .hero-title{font-size:clamp(2.5rem,12vw,5rem)}
+  #hero{padding:80px 18px 200px}
+}
 </style>
 </head>
 <body>
 
-<div class="glow-mesh"></div>
+<div id="cx"></div>
+<div id="cr"></div>
 
-<nav>
-  <a href="#" class="logo">GREAK<span>X</span></a>
-  <a href="mailto:chandu.gpm@gmail.com" class="nav-cta">Inquire Now</a>
+<!-- ══════════ NAV ══════════════════════════════════════════ -->
+<nav id="mainNav">
+  <span class="nav-wm" onclick="showPage('home')">Greak<em class="nx">X</em></span>
+  <ul class="nav-links">
+    <li><a href="#" onclick="navTo('home','hero')" id="nl-home" class="active">Overview</a></li>
+    <li><a href="#" onclick="navTo('home','value')" id="nl-val">Value</a></li>
+    <li><a href="#" onclick="navTo('home','usecases')" id="nl-uc">Use Cases</a></li>
+    <li><a href="#" onclick="navTo('home','pricing')" id="nl-pr">Pricing</a></li>
+    <li><a href="#" onclick="navTo('home','contact')" id="nl-ct">Contact</a></li>
+  </ul>
+  <button class="nav-cta" onclick="navTo('home','contact')">💰 Submit Offer</button>
 </nav>
 
-<section class="hero">
-  <div class="badge">Premium Domain Available</div>
-  <h1>GREAKX.COM</h1>
-  <p>A high-velocity brand name engineered for AI, Cybersecurity, and the next frontier of SaaS innovation.</p>
-  
-  <div class="hero-btns">
-    <a href="https://checkoutlink.godaddy.com/3a75bfae-8c44-4fe9-9cd9-26e59b662e75" class="btn btn-p">Secure Ownership</a>
-    <a href="mailto:chandu.gpm@gmail.com" class="btn btn-s">Contact Agent</a>
+<!-- ══════════════════════════════════════════════════════════
+     HOME PAGE
+══════════════════════════════════════════════════════════ -->
+<div id="pg-home" class="page active">
+
+<!-- URGENCY STRIP -->
+<div class="urge">🔥 First Qualified Offer Wins · Currently Reviewing Serious Inquiries · $75K–$100K · Escrow-Protected Transfer</div>
+
+<!-- ════════════ HERO ════════════ -->
+<section id="hero">
+
+  <!-- SCROLLING IMAGE BACKGROUND STRIPS -->
+  <div class="img-bg" id="imgBg">
+    <!-- Strip 1 -->
+    <div class="strip-row" style="height:33.33%">
+      <div class="strip-track fast" id="s1a"><!-- SVG tiles injected by JS --></div>
+    </div>
+    <!-- Strip 2 -->
+    <div class="strip-row" style="height:33.33%">
+      <div class="strip-track rev slow" id="s2a"><!-- SVG tiles injected by JS --></div>
+    </div>
+    <!-- Strip 3 -->
+    <div class="strip-row" style="height:33.34%">
+      <div class="strip-track" id="s3a"><!-- SVG tiles injected by JS --></div>
+    </div>
   </div>
 
-  <div class="price-banner">
-    <span style="color: var(--text-dim); text-transform: uppercase; font-size: 0.8rem; letter-spacing: 0.1em;">Current Valuation</span>
-    <div class="price-val">$2,499 USD</div>
-    <span style="color: #4ade80; font-size: 0.8rem; font-weight: 600;">Negotiable</span>
+  <div class="img-bg-overlay"></div>
+
+  <!-- HERO CONTENT -->
+  <div class="hero-content">
+    <div class="status-chip">
+      <span class="sc-dot"></span>
+      <span class="sc-txt">Premium 6-Letter .COM · Available for Acquisition</span>
+    </div>
+
+    <!-- TITLE — BEBAS NEUE + ORBITRON X -->
+    <div class="hero-title-wrap">
+      <div class="hero-title">
+        <span class="grk">GREAK</span><span class="xt">X</span>
+      </div>
+      <div class="domain-tag">
+        <span>greakx</span>.com
+        <span style="width:4px;height:4px;background:rgba(0,229,255,.3);border-radius:50%;display:inline-block;margin:0 4px"></span>
+        premium domain
+      </div>
+    </div>
+
+    <h1 class="hero-vp">
+      <strong>Own GreakX.com</strong> — A Rare 6-Letter .COM for<br>
+      <strong>AI</strong>, <strong>Cybersecurity</strong> &amp; <strong>Deep Tech</strong> Brands
+    </h1>
+
+    <div class="price-badge">
+      <span class="pb-lbl">💎 Asking Price — Negotiable</span>
+      <span class="pb-val">$75,000 – $100,000</span>
+      <span class="pb-note">USD · Escrow.com Protected · Instant Transfer · Clean History</span>
+    </div>
+
+    <div class="cta-row">
+      <a class="btn-p" href="#" onclick="navTo('home','contact')">🚀 Acquire Now — Submit Offer</a>
+      <a class="btn-g" href="#" onclick="navTo('home','comparable')">View Comparable Sales →</a>
+    </div>
+
+    <div class="trust-row">
+      <span class="tb"><span class="dot"></span>Verified Seller — VishwaX Technologies Pvt Ltd</span>
+      <span class="tb"><span class="dot"></span>Escrow.com Protected</span>
+      <span class="tb"><span class="dot"></span>Clean WHOIS History</span>
+      <span class="tb"><span class="dot"></span>Trademark-Ready</span>
+      <span class="tb"><span class="dot"></span>5-Day Secure Transfer</span>
+    </div>
+  </div>
+
+  <div class="stats-bar">
+    <div class="sb"><div class="sb-v">3,400+</div><div class="sb-l">Yrs Greek Authority</div></div>
+    <div class="sb"><div class="sb-v">&lt;0.1%</div><div class="sb-l">6-Letter .COM Available</div></div>
+    <div class="sb"><div class="sb-v">6 Chars</div><div class="sb-l">Ultra-Short Brandable</div></div>
+    <div class="sb"><div class="sb-v">∞</div><div class="sb-l">Vertical Market Fit</div></div>
   </div>
 </section>
 
-<section id="features">
-  <h2 class="section-title">Built for Modern Tech</h2>
-  <div class="features">
-    <div class="f-card">
-      <h3>Short & Powerful</h3>
-      <p>Only 6 characters. Easy to type, easy to remember, and perfectly balanced for modern logo design.</p>
-    </div>
-    <div class="f-card">
-      <h3>The "X" Factor</h3>
-      <p>Leveraging the trend of high-tech branding seen in SpaceX, xAI, and Mistral. Signals future-readiness.</p>
-    </div>
-    <div class="f-card">
-      <h3>Global Scalability</h3>
-      <p>Phonetically neutral and easy to pronounce in any language. Ready for international market expansion.</p>
-    </div>
-  </div>
-</section>
-
-<div class="terminal">
-  <div class="t-header">
-    <div class="t-dot" style="background: #ff5f56;"></div>
-    <div class="t-dot" style="background: #ffbd2e;"></div>
-    <div class="t-dot" style="background: #27c93f;"></div>
-  </div>
-  <div class="t-body">
-    <p class="blue">> domain-check GreakX.com --metrics</p>
-    <p>> Analyzing market fit...</p>
-    <p>> Extension: <span class="green">.com (Premium)</span></p>
-    <p>> Category: <span class="green">AI / Fintech / Cyber</span></p>
-    <p>> Brandability: <span class="green">9.8/10</span></p>
-    <p>> Status: <span class="blue">Single Owner Available</span></p>
-    <br>
-    <p class="green">✓ Assets Ready for Transfer via Escrow</p>
+<!-- ════ MARQUEE 1 — TECH SECTORS ════ -->
+<div class="mq1-wrap" aria-label="Technology sectors where GreakX.com excels">
+  <div class="mq-track" id="mq1">
+    <!-- Pills generated by JS -->
   </div>
 </div>
 
-<section id="use-cases">
-  <h2 class="section-title">Ideal Industry Fit</h2>
-  <div class="features">
-    <div class="f-card">
-      <h3 style="color: var(--accent);">01. AI Research</h3>
-      <p>Perfect for LLM training labs, automation platforms, or neural network startups.</p>
+<!-- ════ MARQUEE 2 — TOP TECH DOMAINS ════ -->
+<div class="mq2-wrap">
+  <div class="mq2-label">🌐 Top Tech Domains</div>
+  <div class="mq2-inner">
+    <div class="mq2-track" id="mq2">
+      <!-- Domain pills generated by JS -->
     </div>
-    <div class="f-card">
-      <h3 style="color: var(--accent);">02. Cyber Security</h3>
-      <p>A name that sounds robust and technical. Ideal for encryption or threat detection firms.</p>
-    </div>
-    <div class="f-card">
-      <h3 style="color: var(--accent);">03. Web3/Blockchain</h3>
-      <p>Modern enough for decentralized finance or next-gen protocol development.</p>
+  </div>
+</div>
+
+<!-- ════ VALUE / WHY ════ -->
+<section id="value">
+  <div class="wrap">
+    <div class="val-grid">
+      <div class="val-visual rv">
+        <div class="val-canvas-wrap">
+          <div class="val-ring vr1"></div>
+          <div class="val-ring vr2"></div>
+          <div class="orbit-dot"></div>
+          <div class="orbit-dot"></div>
+          <div class="orbit-dot"></div>
+          <div class="val-center-x">X</div>
+        </div>
+      </div>
+      <div class="rv d2">
+        <span class="kicker">Why GreakX.com</span>
+        <h2 class="h2">The <em>Architecture</em> of a<br>Winning Brand Identity</h2>
+        <div class="rule"></div>
+        <div class="val-points" style="margin-top:30px">
+          <div class="vp"><span class="vp-n">01</span><div class="vp-c"><div class="vp-t">Greek-Rooted Authority — 3,400 Years of Trust</div><p class="vp-d">Greek is the world's oldest living Indo-European language — the cradle of Socratic logic, Euclidean geometry, and Aristotelian philosophy. A brand rooted in this heritage communicates deep, first-principles intelligence to enterprise clients and investors instantly.</p></div></div>
+          <div class="vp"><span class="vp-n">02</span><div class="vp-c"><div class="vp-t">The X Factor — Exponential Ambition</div><p class="vp-d">SpaceX, Google X, Tesla Model X, Twitter/X — the "X" suffix defines the most ambitious companies in the world. GreakX puts any acquirer in that same elite vocabulary, instantly recognizable to VCs, global press, and top-tier tech talent.</p></div></div>
+          <div class="vp"><span class="vp-n">03</span><div class="vp-c"><div class="vp-t">Rare 6-Letter .COM — Scarcity Drives Value</div><p class="vp-d">Less than 0.1% of desirable 6-letter .com domains are on the open market. Short domains consistently command 10–100× premiums. GreakX is two punchy syllables — globally pronounceable, zero cultural friction — an asset that appreciates with the tech market.</p></div></div>
+          <div class="vp"><span class="vp-n">04</span><div class="vp-c"><div class="vp-t">Multi-Vertical Fit — Maximum ROI Ceiling</div><p class="vp-d">AI startup, cybersecurity unicorn, quantum lab, SaaS platform, FinTech scale-up — GreakX works across all of them. This universality means the domain's value ceiling is tied to the entire technology market, not a single vertical's cycle.</p></div></div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
+<!-- ════ USE CASES ════ -->
+<section id="usecases">
+  <div class="wrap">
+    <div class="sec-hdr rv">
+      <span class="kicker">Who Should Buy This Domain</span>
+      <h2 class="h2">Perfect For <em>Category Leaders</em></h2>
+      <div class="rule"></div>
+    </div>
+    <div class="uc-grid">
+      <article class="uc-card rv d1" data-tilt>
+        <div class="uc-ico"><svg width="26" height="26" viewBox="0 0 26 26" fill="none"><circle cx="13" cy="13" r="4" stroke="#00e5ff" stroke-width="1.4"/><circle cx="13" cy="13" r="10" stroke="rgba(0,229,255,.3)" stroke-width=".8" stroke-dasharray="2 3"/><line x1="13" y1="3" x2="13" y2="23" stroke="rgba(0,229,255,.2)" stroke-width=".8"/><line x1="3" y1="13" x2="23" y2="13" stroke="rgba(0,229,255,.2)" stroke-width=".8"/></svg></div>
+        <span class="uc-tag">Vertical 01</span>
+        <h3 class="uc-title">AI Startup or LLM Platform</h3>
+        <p class="uc-text">Greek logic is the ancestor of every algorithm. GreakX signals an AI company built on first-principles intelligence — ideal for LLM platforms, neural research labs, and enterprise AI ventures commanding instant technical credibility.</p>
+      </article>
+      <article class="uc-card rv d2" data-tilt>
+        <div class="uc-ico"><svg width="26" height="26" viewBox="0 0 26 26" fill="none"><path d="M13 2L24 8V18L13 24L2 18V8L13 2Z" stroke="#00e5ff" stroke-width="1.4" fill="rgba(0,229,255,.04)"/><path d="M13 6L20 10V16L13 20L6 16V10L13 6Z" stroke="rgba(0,229,255,.35)" stroke-width=".7" fill="none"/></svg></div>
+        <span class="uc-tag">Vertical 02</span>
+        <h3 class="uc-title">Cybersecurity Platform</h3>
+        <p class="uc-text">The Spartan Phalanx — an impenetrable formation — is cybersecurity's most powerful metaphor. "GreakX Security" positions as fortress-grade protection in the $40B+ enterprise security market.</p>
+      </article>
+      <article class="uc-card rv d3" data-tilt>
+        <div class="uc-ico"><svg width="26" height="26" viewBox="0 0 26 26" fill="none"><circle cx="13" cy="13" r="3" fill="rgba(0,229,255,.25)" stroke="#00e5ff" stroke-width="1.2"/><ellipse cx="13" cy="13" rx="10" ry="4" stroke="#00e5ff" stroke-width="1.1" fill="none" transform="rotate(-30 13 13)"/><ellipse cx="13" cy="13" rx="10" ry="4" stroke="rgba(201,168,76,.5)" stroke-width="1.1" fill="none" transform="rotate(30 13 13)"/></svg></div>
+        <span class="uc-tag">Vertical 03</span>
+        <h3 class="uc-title">Quantum Computing Company</h3>
+        <p class="uc-text">Greek letters — Alpha, Beta, Theta — are core to quantum physics notation. GreakX resonates natively with quantum hardware startups and academic spin-offs seeking scientific credibility with commercial appeal.</p>
+      </article>
+      <article class="uc-card rv d4" data-tilt>
+        <div class="uc-ico"><svg width="26" height="26" viewBox="0 0 26 26" fill="none"><circle cx="13" cy="13" r="10" stroke="#00e5ff" stroke-width="1.1" fill="none"/><ellipse cx="13" cy="13" rx="10" ry="3.5" stroke="rgba(0,229,255,.2)" stroke-width=".7" fill="none"/><line x1="13" y1="3" x2="13" y2="23" stroke="rgba(0,229,255,.2)" stroke-width=".7"/></svg></div>
+        <span class="uc-tag">Vertical 04</span>
+        <h3 class="uc-title">Global SaaS Product</h3>
+        <p class="uc-text">Two syllables. Zero cultural friction. Pronounceable across 90+ languages. GreakX meets every global brand standard — a name that scales from a Bangalore launch to a New York Series B to a Nasdaq IPO.</p>
+      </article>
+      <article class="uc-card rv d5" data-tilt>
+        <div class="uc-ico"><svg width="26" height="26" viewBox="0 0 26 26" fill="none"><rect x="3" y="5" width="20" height="16" rx="2" stroke="#c9a84c" stroke-width="1.4" fill="rgba(201,168,76,.05)"/><line x1="3" y1="10" x2="23" y2="10" stroke="rgba(201,168,76,.3)" stroke-width=".8"/><circle cx="6" cy="7.5" r="1" fill="#c9a84c"/></svg></div>
+        <span class="uc-tag">Vertical 05</span>
+        <h3 class="uc-title">FinTech or Investment Platform</h3>
+        <p class="uc-text">Greek heritage signals institutional trust; "X" signals disruption. Rare dual positioning — GreakX appeals to both conservative institutional clients and forward-thinking VC investors simultaneously.</p>
+      </article>
+      <article class="uc-card rv d6" data-tilt>
+        <div class="uc-ico"><svg width="26" height="26" viewBox="0 0 26 26" fill="none"><rect x="2" y="2" width="10" height="10" rx="1.5" stroke="#00e5ff" stroke-width="1.4" fill="rgba(0,229,255,.05)"/><rect x="14" y="2" width="10" height="10" rx="1.5" stroke="rgba(0,229,255,.35)" stroke-width="1.1"/><rect x="2" y="14" width="10" height="10" rx="1.5" stroke="rgba(0,229,255,.35)" stroke-width="1.1"/><rect x="14" y="14" width="10" height="10" rx="1.5" stroke="#c9a84c" stroke-width="1.4" fill="rgba(201,168,76,.05)"/></svg></div>
+        <span class="uc-tag">Vertical 06</span>
+        <h3 class="uc-title">Deep Tech or Moonshot R&amp;D</h3>
+        <p class="uc-text">From Google X to Alphabet's Moonshot Factory, "X" defines category-creating research entities. "GreakX Labs" or "GreakX Research" instantly positions any R&amp;D arm as a world-class innovation division.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ════ COMPARABLE SALES ════ -->
+<section id="comparable">
+  <div class="wrap">
+    <div class="sec-hdr rv">
+      <span class="kicker">Market Validation · 2025–2026 Real Sales Data</span>
+      <h2 class="h2">Comparable <em>Domain Sales</em></h2>
+      <div class="rule"></div>
+    </div>
+    <p class="comp-note rv"><strong>Valuation Justification:</strong> Real domain transactions from 2025–2026 establish the market context. At $75K–$100K, GreakX.com sits at the <em>conservative end</em> of the premium brandable .com market — strong value given comparable 6-letter domains like Nickel.com ($325K). <em>Sources: DN Journal, NamePros.</em></p>
+    <div class="tbl-wrap rv">
+      <table class="comp" role="table">
+        <thead>
+          <tr>
+            <th>Domain</th><th>Length</th><th>Category</th><th>Sale Price</th><th>Year</th><th>Relevance</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td class="cd">Midnight.com</td><td>8 chars</td><td>Brandable word</td><td class="cp">$1,150,000</td><td>2026</td><td><span class="cr hi">✓ Strong brandable comp</span></td></tr>
+          <tr><td class="cd">PrivateLLM.com</td><td>10 chars</td><td>AI brandable</td><td class="cp">$250,000</td><td>2026</td><td><span class="cr hi">✓ Closest AI-style naming</span></td></tr>
+          <tr><td class="cd">C4.com</td><td>2 chars</td><td>Ultra-short premium</td><td class="cp">$265,000</td><td>2026</td><td><span class="cr md">⚠ Market anchor (shorter)</span></td></tr>
+          <tr><td class="cd">Speed.ai</td><td>5 chars</td><td>AI keyword</td><td class="cp">$165,000</td><td>2026</td><td><span class="cr md">⚠ Tech vertical comp</span></td></tr>
+          <tr><td class="cd">Durable.com</td><td>7 chars</td><td>Dictionary brand</td><td class="cp">$125,000</td><td>2026</td><td><span class="cr hi">✓ Startup naming comp</span></td></tr>
+          <tr><td class="cd">Nickel.com</td><td>6 chars</td><td>Dictionary word</td><td class="cp">$325,000</td><td>2025</td><td><span class="cr md">⚠ Same length, higher tier</span></td></tr>
+          <tr><td class="cd">YouCoin.com</td><td>7 chars</td><td>Brandable crypto</td><td class="cp">$198,000</td><td>2025</td><td><span class="cr hi">✓ Startup-style comp</span></td></tr>
+          <tr><td class="cd">HomeBattery.com</td><td>12 chars</td><td>Industry keyword</td><td class="cp">$75,000</td><td>2025</td><td><span class="cr md">⚠ Price floor reference</span></td></tr>
+          <tr class="gx-row">
+            <td class="cd" style="color:var(--gold2)!important;font-size:.85rem">★ GreakX.com</td>
+            <td style="color:var(--gold)!important;font-weight:700">6 chars</td>
+            <td>Tech brandable .COM</td>
+            <td class="cp" style="font-size:.9rem;color:var(--gold2)!important">$75K – $100K</td>
+            <td style="color:var(--gold)">2025</td>
+            <td><span class="cr hi" style="background:rgba(201,168,76,.1);color:var(--gold2);border-color:rgba(201,168,76,.3)">★ Asking (Negotiable)</span></td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr class="tbl-foot"><td colspan="6">Sources: DN Journal YTD Sales Charts (dnjournal.com) · NamePros Top Domain Sales Reports · All prices reflect verified public domain transactions. GreakX.com is conservatively priced vs. comparable 6-letter .COMs.</td></tr>
+        </tfoot>
+      </table>
+    </div>
+    <p class="rv" style="text-align:center;font-size:.8rem;color:var(--dim2);max-width:600px;margin:24px auto 0;line-height:1.72">At $75,000–$100,000, GreakX is priced <strong style="color:var(--white)">below comparable 6-letter brandable .COMs</strong>. Nickel.com (same length) transacted at $325K. Asymmetric upside for an acquirer in AI or cybersecurity — sectors growing at 30%+ annually.</p>
+  </div>
+</section>
+
+<!-- ════ PRICING ════ -->
+<section id="pricing">
+  <div class="wrap">
+    <div class="sec-hdr rv">
+      <span class="kicker">Investment Details</span>
+      <h2 class="h2">Transparent <em>Pricing</em></h2>
+      <div class="rule"></div>
+    </div>
+    <div class="price-wrap">
+      <div class="price-card rv">
+        <div class="pc-label">💎 Domain Acquisition Price</div>
+        <div class="pc-price">$75K–$100K</div>
+        <div class="pc-sub">USD · Negotiable · Escrow-Protected</div>
+        <ul class="pc-items">
+          <li>Full ownership transfer of GreakX.com</li>
+          <li>All brand architecture documents included</li>
+          <li>Original GX logo files (SVG, PNG, AI formats)</li>
+          <li>Trademark-ready certification letter (Classes 35, 38, 42)</li>
+          <li>Clean history declaration signed by K Rama Chandra</li>
+          <li>IP assignment agreement (domain + brand assets)</li>
+          <li>5-business-day Escrow.com protected transfer</li>
+          <li>Post-transfer advisory call (30 min) with founder</li>
+        </ul>
+        <button class="btn-acquire" onclick="navTo('home','contact')">🚀 Submit Offer Now</button>
+        <p style="font-size:.68rem;color:rgba(201,168,76,.45);text-align:center;margin-top:12px">No broker fees · Direct owner negotiation · Secure Escrow only</p>
+      </div>
+      <div class="price-right rv d2">
+        <div class="pi-box">
+          <div class="pi-title">🔒 Secure 5-Step Transfer</div>
+          <div class="steps">
+            <div class="step"><div class="step-n">1</div><div><div class="step-t">Submit Inquiry</div><div class="step-d">Fill the GX Lead Form with your offer, company, and use case.</div></div></div>
+            <div class="step"><div class="step-n">2</div><div><div class="step-t">NDA &amp; Negotiation</div><div class="step-d">K Rama Chandra responds within 48 hours. NDA via DocuSign.</div></div></div>
+            <div class="step"><div class="step-n">3</div><div><div class="step-t">Escrow.com Deposit</div><div class="step-d">Buyer deposits to Escrow.com — fully licensed, neutral escrow.</div></div></div>
+            <div class="step"><div class="step-n">4</div><div><div class="step-t">Domain Transfer</div><div class="step-d">Domain pushed to buyer's registrar within 5 business days.</div></div></div>
+            <div class="step"><div class="step-n">5</div><div><div class="step-t">Escrow Release</div><div class="step-d">Buyer confirms receipt. Funds released. Transaction complete.</div></div></div>
+          </div>
+        </div>
+        <div class="pi-box">
+          <div class="pi-title">📊 ROI Justification</div>
+          <p class="pi-text">Comparable 6-letter .COMs have transacted $125K–$325K (2025–26). GreakX at $75K–$100K is <strong style="color:var(--white)">conservatively priced</strong> — offering strong asymmetric upside for any acquiring brand in AI or cybersecurity, two sectors growing at 30%+ annually through 2030.</p>
+        </div>
+        <div class="pi-box">
+          <div class="pi-title">📞 Direct Contact</div>
+          <p class="pi-text">Bypass the form — contact directly:</p>
+          <p style="font-family:'Rajdhani',sans-serif;font-size:.92rem;color:var(--cyan);margin-top:7px;font-weight:600">vishwaxofficial@gmail.com</p>
+          <p style="font-size:.73rem;color:var(--dim);margin-top:3px">K Rama Chandra · Director, VishwaX Technologies Pvt Ltd</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════ CONTACT ════ -->
+<section id="contact">
+  <div class="wrap">
+    <div class="sec-hdr rv">
+      <span class="kicker">Strategic Inquiry</span>
+      <h2 class="h2">Submit Your <em>Offer</em></h2>
+      <div class="rule"></div>
+    </div>
+    <div class="ct-grid">
+      <div class="rv">
+        <h3 class="ct-info-title">Connect with<br><em>K Rama Chandra</em></h3>
+        <p class="ct-info-text">GreakX.com is accepting acquisition offers from qualified investors, technology companies, and venture-backed startups globally. All negotiations are handled personally by the founder with full transparency and escrow-protected transfer.</p>
+        <div class="dbox">
+          <div class="dl">Direct Negotiation Channel</div>
+          <div class="dv">vishwaxofficial@gmail.com</div>
+          <div class="dn">K Rama Chandra · Director, VishwaX Technologies Pvt Ltd</div>
+        </div>
+        <div class="disc-box">
+          <div class="disc-t">⚖ Legal Asset Certification</div>
+          <p class="disc-d">GreakX.com is certified clean — zero penalties, no black-hat SEO history, no trademark conflicts. Trademark-ready (IC Classes 35, 38, 42). Transfer via Escrow.com with international wire support. VishwaX Technologies retains all rights until formal transfer completion under agreed terms.</p>
+        </div>
+      </div>
+      <div class="rv d2">
+        <div class="form-card">
+          <div class="ft">GX Lead Form — Offer Submission</div>
+          <p class="fs">For serious buyers only. Your inquiry is sent directly to K Rama Chandra at vishwaxofficial@gmail.com.</p>
+          <form id="iqForm" action="https://formsubmit.co/vishwaxofficial@gmail.com" method="POST" target="_blank" onsubmit="handleForm(event)">
+            <input type="hidden" name="_subject" value="🚀 GreakX.com — New Acquisition Inquiry">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="text" name="_honey" style="display:none" tabindex="-1">
+            <div class="fr2 fg">
+              <div><label class="fl">First Name *</label><input type="text" name="First Name" class="fc" placeholder="First name" required></div>
+              <div><label class="fl">Last Name *</label><input type="text" name="Last Name" class="fc" placeholder="Last name" required></div>
+            </div>
+            <div class="fg"><label class="fl">Company / Organization *</label><input type="text" name="Company" class="fc" placeholder="Your company name" required></div>
+            <div class="fg"><label class="fl">Business Email *</label><input type="email" name="Email" class="fc" placeholder="you@company.com" required></div>
+            <div class="fg"><label class="fl">Phone / WhatsApp</label><input type="tel" name="Phone" class="fc" placeholder="+1 or +91 international"></div>
+            <div class="fr2 fg">
+              <div>
+                <label class="fl">Inquiry Type *</label>
+                <select name="Inquiry Type" class="fc" required>
+                  <option value="" disabled selected>Select type</option>
+                  <option>Domain Acquisition</option>
+                  <option>Strategic Partnership</option>
+                  <option>Investment Inquiry</option>
+                  <option>Licensing Interest</option>
+                  <option>Joint Venture</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div>
+                <label class="fl">Offer Range (USD) *</label>
+                <select name="Offer Range" class="fc" required>
+                  <option value="" disabled selected>Your range</option>
+                  <option>$75,000 – $85,000</option>
+                  <option>$85,000 – $100,000</option>
+                  <option>$100,000 – $150,000</option>
+                  <option>$150,000 – $250,000</option>
+                  <option>$250,000+</option>
+                  <option>Open to Discuss</option>
+                </select>
+              </div>
+            </div>
+            <div class="fg">
+              <label class="fl">Intended Use Case *</label>
+              <select name="Use Case" class="fc" required>
+                <option value="" disabled selected>Primary vertical</option>
+                <option>Artificial Intelligence / ML</option>
+                <option>Cybersecurity</option>
+                <option>Quantum / Deep Tech</option>
+                <option>Cloud / SaaS Platform</option>
+                <option>FinTech / WealthTech</option>
+                <option>Blockchain / Web3</option>
+                <option>BioTech / HealthAI</option>
+                <option>General Technology Brand</option>
+                <option>Domain Investment / Resale</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="fg"><label class="fl">Proposal / Message *</label><textarea name="Message" class="fc" placeholder="Describe your strategic vision, company background, or acquisition rationale..." required></textarea></div>
+            <div class="fg fchk">
+              <input type="checkbox" id="agree" name="Agreement" value="Confirmed" required>
+              <label for="agree">I confirm this is a good-faith inquiry. I understand GreakX.com is a premium asset under exclusive ownership of VishwaX Technologies Pvt Ltd, represented by K Rama Chandra.</label>
+            </div>
+            <button type="submit" class="fsub">⚡ Submit Acquisition Inquiry</button>
+          </form>
+          <div class="fmsg" id="fMsg">✅ Inquiry sent to vishwaxofficial@gmail.com — K Rama Chandra will respond within 48 business hours.</div>
+          <div class="ferr" id="fErr">⚠ Please complete all required fields and confirm the agreement before submitting.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════ FOOTER ════ -->
 <footer>
-  <h2 style="margin-bottom: 1rem;">Own the identity. Own the market.</h2>
-  <p style="color: var(--text-dim); margin-bottom: 2rem;">Fast transfer via Escrow. Safe and secure ownership transition.</p>
-  <p>Direct Inquiry: <a href="mailto:chandu.gpm@gmail.com" class="contact-link">chandu.gpm@gmail.com</a></p>
-  <div style="margin-top: 3rem; font-size: 0.8rem; color: #475569;">
-    © 2026 GREAKX.COM · ALL RIGHTS RESERVED
+  <div class="wrap">
+    <div class="ft-g">
+      <div>
+        <div class="ft-wm">Greak<span class="nx">X</span>.com</div>
+        <p class="ft-tag">Premium 6-letter .COM domain owned by VishwaX Technologies Pvt Ltd. Fusing 3,400 years of classical intelligence with exponential innovation.</p>
+      </div>
+      <div>
+        <div class="ft-ct">Navigation</div>
+        <ul class="ft-links">
+          <li><a href="#" onclick="navTo('home','hero')">Overview</a></li>
+          <li><a href="#" onclick="navTo('home','value')">Value Proposition</a></li>
+          <li><a href="#" onclick="navTo('home','usecases')">Use Cases</a></li>
+          <li><a href="#" onclick="navTo('home','comparable')">Comparable Sales</a></li>
+          <li><a href="#" onclick="navTo('home','pricing')">Pricing</a></li>
+          <li><a href="#" onclick="navTo('home','contact')">Submit Offer</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="ft-ct">Legal</div>
+        <ul class="ft-links">
+          <li><a href="#" onclick="showPage('rules')">Rules &amp; Regulations</a></li>
+          <li><a href="#" onclick="showPage('privacy')">Data &amp; Privacy</a></li>
+          <li><a href="#" onclick="showPage('legal')">Compliance &amp; Legal</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="ft-ct">Contact</div>
+        <ul class="ft-links">
+          <li><a href="mailto:vishwaxofficial@gmail.com">vishwaxofficial@gmail.com</a></li>
+          <li><a href="#">K Rama Chandra, Director</a></li>
+          <li><a href="#">VishwaX Technologies Pvt Ltd</a></li>
+          <li><a href="#">India · Registered Entity</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="ft-bot">
+      <span class="ft-copy">© 2025 VishwaX Technologies Pvt Ltd · GreakX.com · All Rights Reserved · Owned by K Rama Chandra</span>
+      <span class="ft-badge">Trademark-Ready · Clean History · ICANN Compliant</span>
+    </div>
   </div>
 </footer>
+</div><!-- /pg-home -->
 
+<!-- ══════════════════════════════════════════════════════════
+     RULES & REGULATIONS
+══════════════════════════════════════════════════════════ -->
+<div id="pg-rules" class="page">
+  <div class="pol-hero">
+    <span class="pol-icon">📋</span>
+    <h1 class="pol-h1">Rules &amp; <em>Regulations</em></h1>
+    <div class="pol-meta"><span>GreakX.com</span><span class="pm-dot"></span><span>VishwaX Technologies Pvt Ltd</span><span class="pm-dot"></span><span>Effective: January 1, 2025</span><span class="pm-dot"></span><span>Version 2.1</span></div>
+    <button class="pol-back" onclick="showPage('home')">← Back to GreakX.com</button>
+  </div>
+  <div class="pol-body">
+    <div class="pol-sec">
+      <div class="pol-stitle"><span class="ps-b">§ 01</span>Domain Ownership &amp; Usage Rights</div>
+      <p class="pol-p">GreakX.com is a registered premium domain asset owned exclusively by <strong>K Rama Chandra</strong>, Director of <strong>VishwaX Technologies Pvt Ltd</strong>, incorporated under the Companies Act, 2013 of India. All IP rights, usage rights, and transfer rights are vested solely in VishwaX Technologies Pvt Ltd unless formally transferred through a legally binding agreement.</p>
+      <div class="pol-box"><div class="pb-t">Ownership Declaration</div><p class="pb-text">No third party may claim, represent, or imply ownership of GreakX.com without written authorization from K Rama Chandra. Unauthorized use of this domain name, brand identity, or GX mark constitutes infringement under applicable intellectual property law.</p></div>
+      <ul class="pol-list">
+        <li>The domain GreakX.com is registered and maintained in good standing with an ICANN-accredited registrar.</li>
+        <li>No liens, encumbrances, or third-party claims exist against this domain asset as of the effective date.</li>
+        <li>The GX wordmark and all brand elements are original works owned by VishwaX Technologies Pvt Ltd.</li>
+        <li>Use of this domain for parking, forwarding, or sub-licensing requires explicit written consent from the owner.</li>
+        <li>Any breach of this section may result in civil and criminal proceedings under Indian and international IP law.</li>
+      </ul>
+    </div>
+    <div class="pol-div"></div>
+    <div class="pol-sec">
+      <div class="pol-stitle"><span class="ps-b">§ 02</span>Acquisition Rules</div>
+      <div class="pol-g2">
+        <div class="pg-c"><div class="pg-ic">🤝</div><div class="pg-t">Good Faith Requirement</div><p class="pg-d">All offers must be bona fide. Speculative or bad-faith submissions are prohibited. False representation of identity is grounds for disqualification.</p></div>
+        <div class="pg-c"><div class="pg-ic">🔒</div><div class="pg-t">Escrow-Only Transfer</div><p class="pg-d">All financial transactions must route through Escrow.com or equivalent licensed service. Direct wire transfers without escrow are not accepted.</p></div>
+        <div class="pg-c"><div class="pg-ic">📄</div><div class="pg-t">NDA Required</div><p class="pg-d">Serious buyers execute a Non-Disclosure Agreement prior to detailed valuation discussions. All negotiations are strictly confidential.</p></div>
+        <div class="pg-c"><div class="pg-ic">⚖️</div><div class="pg-t">Lawful Use Certification</div><p class="pg-d">Buyers must certify the domain will not be used for activities violating applicable laws or ethical standards in any jurisdiction.</p></div>
+      </div>
+      <table class="pol-tbl"><thead><tr><th>Stage</th><th>Action</th><th>Timeline</th><th>Party</th></tr></thead><tbody><tr><td>1. Inquiry</td><td>Submit GX Lead Form</td><td>Immediate</td><td>Buyer</td></tr><tr><td>2. Response</td><td>Acknowledgment &amp; NDA</td><td>48 hours</td><td>VishwaX</td></tr><tr><td>3. Negotiation</td><td>Valuation discussion</td><td>1–7 days</td><td>Both</td></tr><tr><td>4. Agreement</td><td>Signed transfer agreement</td><td>2–5 days</td><td>Both</td></tr><tr><td>5. Escrow</td><td>Funds deposited to Escrow.com</td><td>1–3 days</td><td>Buyer</td></tr><tr><td>6. Transfer</td><td>Domain push to buyer's registrar</td><td>24–72 hours</td><td>VishwaX</td></tr><tr><td>7. Release</td><td>Escrow funds released on confirmation</td><td>Upon confirm</td><td>Escrow.com</td></tr></tbody></table>
+    </div>
+    <div class="pol-div"></div>
+    <div class="pol-sec">
+      <div class="pol-stitle"><span class="ps-b">§ 03</span>Visitor Conduct Rules</div>
+      <ul class="pol-list">
+        <li>You will not engage in automated scraping or data harvesting of this website without prior written consent.</li>
+        <li>You will not attempt to reverse-engineer, copy, or replicate the website's design or brand architecture.</li>
+        <li>You will provide accurate and truthful information in all form submissions.</li>
+        <li>You will not submit false or fraudulent acquisition offers intended to disrupt legitimate negotiations.</li>
+        <li>You will not use information from this website to harm or defame VishwaX Technologies Pvt Ltd or its principals.</li>
+      </ul>
+    </div>
+    <div class="pol-div"></div>
+    <div class="pol-sec">
+      <div class="pol-stitle"><span class="ps-b">§ 04</span>Prohibited Activities</div>
+      <div class="pol-box red"><div class="pb-t">⚠ Strictly Prohibited</div><p class="pb-text">The following activities may result in legal action under Indian law and international IP treaties.</p></div>
+      <ul class="pol-list">
+        <li><strong>Trademark Infringement:</strong> Use of "GreakX," "GX," or confusingly similar marks without written authorization.</li>
+        <li><strong>Cybersquatting:</strong> Registration of domains similar to GreakX.com with intent to resell or disrupt.</li>
+        <li><strong>Defamation:</strong> Publishing false statements about GreakX.com, its owner, or VishwaX Technologies Pvt Ltd.</li>
+        <li><strong>Social Engineering:</strong> Attempting to deceive registrars into transferring the domain without authorization.</li>
+        <li><strong>UDRP Abuse:</strong> Filing bad-faith UDRP complaints without legitimate legal standing.</li>
+        <li><strong>Impersonation:</strong> Representing oneself as authorized agent of VishwaX Technologies without written authorization.</li>
+      </ul>
+    </div>
+    <div class="pol-div"></div>
+    <div class="pol-sec">
+      <div class="pol-stitle"><span class="ps-b">§ 05</span>Enforcement &amp; Governing Law</div>
+      <p class="pol-p">These Rules are governed by the laws of the <strong>Republic of India</strong>. For domain disputes, ICANN's UDRP applies. VishwaX Technologies reserves all rights to pursue civil and criminal remedies for violations including injunctive relief, damages, and recovery of legal costs.</p>
+      <div class="pol-box gold"><div class="pb-t">Contact for Legal Matters</div><p class="pb-text"><strong>vishwaxofficial@gmail.com</strong> — Subject: "Legal Notice — GreakX.com" — K Rama Chandra, Director, VishwaX Technologies Pvt Ltd</p></div>
+    </div>
+  </div>
+  <footer><div class="wrap"><div class="ft-bot"><span class="ft-copy">© 2025 VishwaX Technologies Pvt Ltd · GreakX.com · Rules &amp; Regulations v2.1</span><span class="ft-badge">K Rama Chandra, Director</span></div></div></footer>
+</div>
+
+<!-- ══════════════════════════════════════════════════════════
+     DATA & PRIVACY
+══════════════════════════════════════════════════════════ -->
+<div id="pg-privacy" class="page">
+  <div class="pol-hero">
+    <span class="pol-icon">🔒</span>
+    <h1 class="pol-h1">Data &amp; <em>Privacy</em> Policy</h1>
+    <div class="pol-meta"><span>GreakX.com</span><span class="pm-dot"></span><span>GDPR &amp; India DPDPA 2023</span><span class="pm-dot"></span><span>Updated: January 1, 2025</span><span class="pm-dot"></span><span>v3.0</span></div>
+    <button class="pol-back" onclick="showPage('home')">← Back to GreakX.com</button>
+  </div>
+  <div class="pol-body">
+    <div class="pol-box" style="margin-bottom:36px"><div class="pb-t">Our Commitment</div><p class="pb-text">VishwaX Technologies Pvt Ltd complies with the <strong>Information Technology Act, 2000 (India)</strong>, the <strong>Digital Personal Data Protection Act 2023</strong>, and aligns with <strong>GDPR</strong> principles for international visitors.</p></div>
+    <div class="pol-sec">
+      <div class="pol-stitle"><span class="ps-b">§ 01</span>Data We Collect</div>
+      <table class="pol-tbl"><thead><tr><th>Category</th><th>Fields</th><th>Source</th><th>Mandatory?</th></tr></thead><tbody><tr><td>Identity Data</td><td>First name, last name</td><td>Form submission</td><td>Yes</td></tr><tr><td>Contact Data</td><td>Email, phone</td><td>Form submission</td><td>Yes (email)</td></tr><tr><td>Professional Data</td><td>Company, role</td><td>Form submission</td><td>Yes</td></tr><tr><td>Commercial Data</td><td>Offer range, use case, inquiry type</td><td>Form submission</td><td>Yes</td></tr><tr><td>Communication Data</td><td>Message / proposal content</td><td>Form submission</td><td>Yes</td></tr><tr><td>Technical Data</td><td>IP address, browser, session</td><td>Server logs</td><td>Automatic</td></tr></tbody></table>
+      <div class="pol-box"><div class="pb-t">Sensitive Data — Not Collected</div><p class="pb-text">We do not collect racial origin, political opinions, religious beliefs, health data, biometric data, or financial credentials.</p></div>
+    </div>
+    <div class="pol-div"></div>
+    <div class="pol-sec">
+      <div class="pol-stitle"><span class="ps-b">§ 02</span>How We Use Your Data</div>
+      <ul class="pol-list">
+        <li><strong>Inquiry Processing:</strong> To evaluate, respond to, and negotiate domain acquisition offers.</li>
+        <li><strong>Communication:</strong> To contact you regarding your inquiry, negotiation, and transfer documentation.</li>
+        <li><strong>Due Diligence:</strong> To verify identity and legitimacy of prospective buyers.</li>
+        <li><strong>Legal Compliance:</strong> To maintain records required by Indian company law and international tax regulations.</li>
+        <li><strong>Security:</strong> To detect and prevent fraudulent use of the acquisition process.</li>
+      </ul>
+      <div class="pol-box red"><div class="pb-t">We Will NEVER</div><p class="pb-text">Sell, rent, or share your personal data with third-party marketers. Use your data for unsolicited commercial communications. Transfer your data to jurisdictions without adequate data protection laws.</p></div>
+    </div>
+    <div class="pol-div"></div>
+    <div class="pol-sec">
+      <div class="pol-stitle"><span class="ps-b">§ 03</span>Storage &amp; Security</div>
+      <p class="pol-p">Data is transmitted via <strong>TLS 1.3 encrypted connections</strong> and processed by FormSubmit.co (GDPR-compliant). Email via Google Workspace, subject to Google's Privacy Policy.</p>
+      <div class="pol-g2">
+        <div class="pg-c"><div class="pg-ic">🔐</div><div class="pg-t">Encryption in Transit</div><p class="pg-d">All data protected by TLS 1.3. Form submissions delivered via encrypted SMTP. No plain-text transmission.</p></div>
+        <div class="pg-c"><div class="pg-ic">🗄️</div><div class="pg-t">Retention Period</div><p class="pg-d">Inquiry data retained 3 years from submission, or until transaction completion (whichever is longer).</p></div>
+        <div class="pg-c"><div class="pg-ic">🛡️</div><div class="pg-t">Access Control</div><p class="pg-d">Only K Rama Chandra and authorized VishwaX personnel access personal data. All access logged and audited.</p></div>
+        <div class="pg-c"><div class="pg-ic">🔔</div><div class="pg-t">Breach Notification</div><p class="pg-d">In the event of a data breach, affected users will be notified within 72 hours as required by applicable law.</p></div>
+      </div>
+    </div>
+    <div class="pol-div"></div>
+    <div class="pol-sec">
+      <div class="pol-stitle"><span class="ps-b">§ 04</span>Your Data Rights</div>
+      <ul class="pol-list">
+        <li><strong>Right of Access:</strong> Request a copy of all personal data we hold about you.</li>
+        <li><strong>Right to Rectification:</strong> Request correction of inaccurate or incomplete data.</li>
+        <li><strong>Right to Erasure:</strong> Request deletion, subject to legal retention obligations.</li>
+        <li><strong>Right to Portability:</strong> Request your data in machine-readable format.</li>
+        <li><strong>Right to Object:</strong> Object to processing for legitimate interests or direct marketing.</li>
+        <li><strong>Right to Withdraw Consent:</strong> Withdraw consent at any time without affecting prior lawful processing.</li>
+      </ul>
+      <p class="pol-p">To exercise rights: <strong>vishwaxofficial@gmail.com</strong> — Subject: "Data Rights Request — GreakX.com." Response within 30 days.</p>
+    </div>
+    <div class="pol-div"></div>
+    <div class="pol-sec">
+      <div class="pol-stitle"><span class="ps-b">§ 05</span>Cookies &amp; Tracking</div>
+      <p class="pol-p">GreakX.com uses no third-party advertising cookies or behavioral tracking pixels. Session cookies maintain basic functionality and are deleted when you close your browser. No persistent tracking cookies are set without explicit consent.</p>
+    </div>
+  </div>
+  <footer><div class="wrap"><div class="ft-bot"><span class="ft-copy">© 2025 VishwaX Technologies Pvt Ltd · GreakX.com · Data &amp; Privacy Policy v3.0</span><span class="ft-badge">DPDPA 2023 &amp; GDPR Aligned</span></div></div></footer>
+</div>
+
+<!-- ══════════════════════════════════════════════════════════
+     COMPLIANCE & LEGAL
+══════════════════════════════════════════════════════════ -->
+<div id="pg-legal" class="page">
+  <div class="pol-hero">
+    <span class="pol-icon">⚖️</span>
+    <h1 class="pol-h1">Compliance &amp; <em>Legal</em></h1>
+    <div class="pol-meta"><span>GreakX.com</span><span class="pm-dot"></span><span>VishwaX Technologies Pvt Ltd</span><span class="pm-dot"></span><span>Multi-Jurisdictional Framework</span><span class="pm-dot"></span><span>Version 1.5</span></div>
+    <button class="pol-back" onclick="showPage('home')">← Back to GreakX.com</button>
+  </div>
+  <div class="pol-body">
+    <div class="pol-sec">
+      <div class="pol-stitle"><span class="ps-b">§ 01</span>Corporate Standing &amp; Entity Profile</div>
+      <table class="pol-tbl"><thead><tr><th>Field</th><th>Detail</th></tr></thead><tbody><tr><td>Legal Entity</td><td>VishwaX Technologies Pvt Ltd</td></tr><tr><td>Entity Type</td><td>Private Limited Company</td></tr><tr><td>Governing Law</td><td>Companies Act, 2013 (India)</td></tr><tr><td>Director / Founder</td><td>K Rama Chandra</td></tr><tr><td>Contact Email</td><td>vishwaxofficial@gmail.com</td></tr><tr><td>Domain Asset</td><td>GreakX.com (.COM TLD, 6 characters)</td></tr><tr><td>Asset Status</td><td>Clean · No Encumbrances · Active</td></tr><tr><td>Transfer Readiness</td><td>Immediate upon executed agreement</td></tr><tr><td>Trademark Status</td><td>Trademark-Ready (IC Classes 35, 38, 42)</td></tr></tbody></table>
+      <div class="pol-box"><div class="pb-t">Good Standing Certification</div><p class="pb-text">VishwaX Technologies Pvt Ltd is in good standing with all applicable regulatory authorities. Verified documentation of corporate standing, directorship, and domain ownership is provided to serious buyers upon NDA execution.</p></div>
+    </div>
+    <div class="pol-div"></div>
+    <div class="pol-sec">
+      <div class="pol-stitle"><span class="ps-b">§ 02</span>Intellectual Property &amp; Trademark Status</div>
+      <div class="pol-g2">
+        <div class="pg-c"><div class="pg-ic">🌐</div><div class="pg-t">Domain — GreakX.com</div><p class="pg-d">Clean WHOIS history. No prior UDRP disputes, trademark conflicts, or SEO penalties. Trademark-ready in IC Classes 35, 38, 42.</p></div>
+        <div class="pg-c"><div class="pg-ic">™️</div><div class="pg-t">Brand Name "GreakX"</div><p class="pg-d">Assessed as distinctive and registrable. Registration may be initiated by the acquirer in target markets immediately upon transfer.</p></div>
+        <div class="pg-c"><div class="pg-ic">🎨</div><div class="pg-t">GX Wordmark &amp; Design</div><p class="pg-d">Original creative works protected under copyright. Transferred to buyer in full as part of the acquisition package.</p></div>
+        <div class="pg-c"><div class="pg-ic">📝</div><div class="pg-t">Brand Architecture Docs</div><p class="pg-d">All associated brand documents, taglines, and marketing copy are original works transferred fully to the buyer upon acquisition.</p></div>
+      </div>
+    </div>
+    <div class="pol-div"></div>
+    <div class="pol-sec">
+      <div class="pol-stitle"><span class="ps-b">§ 03</span>Legal Transfer Framework</div>
+      <ul class="pol-list">
+        <li><strong>Transfer Agreement:</strong> A legally binding Domain Name Purchase and Transfer Agreement is executed prior to any financial transaction.</li>
+        <li><strong>Seller Warranties:</strong> VishwaX warrants full authority to sell, domain free of encumbrances, no conflicting agreements exist.</li>
+        <li><strong>Buyer Warranties:</strong> Buyer warrants authority to purchase, legitimacy of funds, and lawful intended use.</li>
+        <li><strong>Escrow Mechanism:</strong> All funds held by Escrow.com until transfer confirmed. 5-business-day inspection period.</li>
+        <li><strong>ICANN Compliance:</strong> Transfer follows ICANN Transfer Policy and all inter-registrar transfer protocols.</li>
+        <li><strong>Tax Compliance:</strong> Both parties are responsible for their own tax obligations arising from the transaction.</li>
+      </ul>
+      <div class="pol-box gold"><div class="pb-t">🔒 Secure Transfer Guarantee</div><p class="pb-text">GreakX.com will be delivered to the buyer's registrar account within 5 business days of escrow funding confirmation. If transfer fails for reasons attributable to the seller, full escrow funds are returned to the buyer immediately.</p></div>
+    </div>
+    <div class="pol-div"></div>
+    <div class="pol-sec">
+      <div class="pol-stitle"><span class="ps-b">§ 04</span>Limitation of Liability</div>
+      <ul class="pol-list">
+        <li>Market valuation figures cited are indicative estimates based on comparable domain sales — not guaranteed future values.</li>
+        <li>VishwaX Technologies shall not be liable for indirect, consequential, or punitive damages from use of this website.</li>
+        <li>Third-party services (Escrow.com, FormSubmit, Google) are independent entities. VishwaX is not responsible for their failures.</li>
+        <li>Nothing on this website constitutes legal, financial, or investment advice. Obtain independent counsel before acquiring.</li>
+      </ul>
+    </div>
+    <div class="pol-div"></div>
+    <div class="pol-sec">
+      <div class="pol-stitle"><span class="ps-b">§ 05</span>Dispute Resolution &amp; Governing Law</div>
+      <ul class="pol-list">
+        <li><strong>Governing Law:</strong> All transactions governed by the laws of the Republic of India.</li>
+        <li><strong>Primary Resolution:</strong> Good-faith negotiation for 30 days before any formal proceedings.</li>
+        <li><strong>Arbitration:</strong> Binding arbitration under the Arbitration and Conciliation Act, 1996 (India).</li>
+        <li><strong>Domain Disputes:</strong> Domain-specific disputes subject to ICANN's UDRP.</li>
+        <li><strong>International Buyers:</strong> EU, US, and UK buyers: standard international commercial arbitration principles apply.</li>
+      </ul>
+      <div class="pol-box"><div class="pb-t">Legal Correspondence</div><p class="pb-text">All formal legal notices: K Rama Chandra, Director, VishwaX Technologies Pvt Ltd — <strong>vishwaxofficial@gmail.com</strong> — Subject: "Legal Notice — GreakX.com"</p></div>
+    </div>
+  </div>
+  <footer><div class="wrap"><div class="ft-bot"><span class="ft-copy">© 2025 VishwaX Technologies Pvt Ltd · GreakX.com · Compliance &amp; Legal v1.5</span><span class="ft-badge">Companies Act 2013 · ICANN Compliant</span></div></div></footer>
+</div>
+
+<!-- ══════════════════════════════════════════════════════════
+     JAVASCRIPT
+══════════════════════════════════════════════════════════ -->
+<script>
+/* ── CURSOR ── */
+const cx=document.getElementById('cx'),cr=document.getElementById('cr');
+let mx=0,my=0,rx=0,ry=0;
+document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;cx.style.left=mx+'px';cx.style.top=my+'px'});
+(function a(){rx+=(mx-rx)*.12;ry+=(my-ry)*.12;cr.style.left=rx+'px';cr.style.top=ry+'px';requestAnimationFrame(a)})();
+document.querySelectorAll('a,button,.uc-card,.tech-pill,.dom-pill,.vp,.pol-back,.pg-c').forEach(el=>{
+  el.addEventListener('mouseenter',()=>{cx.style.width='14px';cx.style.height='14px';cx.style.background='var(--gold)';cr.style.width='42px';cr.style.height='42px';cr.style.borderColor='rgba(201,168,76,.45)'});
+  el.addEventListener('mouseleave',()=>{cx.style.width='7px';cx.style.height='7px';cx.style.background='var(--cyan)';cr.style.width='28px';cr.style.height='28px';cr.style.borderColor='rgba(0,229,255,.4)'});
+});
+
+/* ── SCROLLING BACKGROUND IMAGE STRIPS ── */
+const techSVGs=[
+  // Circuit board tile
+  `<svg width="220" height="100%" viewBox="0 0 220 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="220" height="120" fill="#020c1e"/>
+    <line x1="20" y1="20" x2="200" y2="20" stroke="rgba(0,229,255,.12)" stroke-width="1"/>
+    <line x1="20" y1="60" x2="200" y2="60" stroke="rgba(0,229,255,.08)" stroke-width="1"/>
+    <line x1="20" y1="100" x2="200" y2="100" stroke="rgba(0,229,255,.12)" stroke-width="1"/>
+    <line x1="40" y1="0" x2="40" y2="120" stroke="rgba(0,229,255,.08)" stroke-width="1"/>
+    <line x1="110" y1="0" x2="110" y2="120" stroke="rgba(0,229,255,.12)" stroke-width="1"/>
+    <line x1="180" y1="0" x2="180" y2="120" stroke="rgba(0,229,255,.08)" stroke-width="1"/>
+    <rect x="30" y="10" width="20" height="20" rx="2" stroke="rgba(0,229,255,.2)" stroke-width="1" fill="rgba(0,229,255,.04)"/>
+    <rect x="100" y="50" width="20" height="20" rx="2" stroke="rgba(0,229,255,.2)" stroke-width="1" fill="rgba(0,229,255,.04)"/>
+    <rect x="165" y="88" width="20" height="20" rx="2" stroke="rgba(201,168,76,.2)" stroke-width="1" fill="rgba(201,168,76,.04)"/>
+    <circle cx="40" cy="20" r="3" fill="rgba(0,229,255,.3)"/>
+    <circle cx="110" cy="60" r="3" fill="rgba(0,229,255,.3)"/>
+    <circle cx="180" cy="100" r="3" fill="rgba(201,168,76,.3)"/>
+    <path d="M40 20 L110 20 L110 60" stroke="rgba(0,229,255,.15)" stroke-width="1" fill="none"/>
+    <path d="M110 60 L180 60 L180 100" stroke="rgba(0,229,255,.1)" stroke-width="1" fill="none"/>
+  </svg>`,
+  // AI Neural network
+  `<svg width="220" height="100%" viewBox="0 0 220 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="220" height="120" fill="#020c1e"/>
+    <circle cx="30" cy="40" r="5" stroke="rgba(0,229,255,.3)" stroke-width="1" fill="rgba(0,229,255,.06)"/>
+    <circle cx="30" cy="80" r="5" stroke="rgba(0,229,255,.3)" stroke-width="1" fill="rgba(0,229,255,.06)"/>
+    <circle cx="110" cy="25" r="6" stroke="rgba(0,229,255,.4)" stroke-width="1.2" fill="rgba(0,229,255,.08)"/>
+    <circle cx="110" cy="60" r="6" stroke="rgba(0,229,255,.4)" stroke-width="1.2" fill="rgba(0,229,255,.08)"/>
+    <circle cx="110" cy="95" r="6" stroke="rgba(0,229,255,.4)" stroke-width="1.2" fill="rgba(0,229,255,.08)"/>
+    <circle cx="190" cy="50" r="7" stroke="rgba(201,168,76,.4)" stroke-width="1.2" fill="rgba(201,168,76,.07)"/>
+    <circle cx="190" cy="80" r="7" stroke="rgba(201,168,76,.4)" stroke-width="1.2" fill="rgba(201,168,76,.07)"/>
+    <line x1="35" y1="40" x2="104" y2="27" stroke="rgba(0,229,255,.1)" stroke-width=".7"/>
+    <line x1="35" y1="40" x2="104" y2="60" stroke="rgba(0,229,255,.1)" stroke-width=".7"/>
+    <line x1="35" y1="80" x2="104" y2="60" stroke="rgba(0,229,255,.1)" stroke-width=".7"/>
+    <line x1="35" y1="80" x2="104" y2="95" stroke="rgba(0,229,255,.1)" stroke-width=".7"/>
+    <line x1="116" y1="27" x2="183" y2="50" stroke="rgba(201,168,76,.1)" stroke-width=".7"/>
+    <line x1="116" y1="60" x2="183" y2="50" stroke="rgba(201,168,76,.1)" stroke-width=".7"/>
+    <line x1="116" y1="60" x2="183" y2="80" stroke="rgba(201,168,76,.1)" stroke-width=".7"/>
+    <line x1="116" y1="95" x2="183" y2="80" stroke="rgba(201,168,76,.1)" stroke-width=".7"/>
+  </svg>`,
+  // Server/data center
+  `<svg width="220" height="100%" viewBox="0 0 220 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="220" height="120" fill="#020c1e"/>
+    <rect x="20" y="15" width="180" height="20" rx="2" stroke="rgba(0,229,255,.15)" stroke-width="1" fill="rgba(0,229,255,.03)"/>
+    <rect x="20" y="45" width="180" height="20" rx="2" stroke="rgba(0,229,255,.15)" stroke-width="1" fill="rgba(0,229,255,.03)"/>
+    <rect x="20" y="75" width="180" height="20" rx="2" stroke="rgba(0,229,255,.15)" stroke-width="1" fill="rgba(0,229,255,.03)"/>
+    <circle cx="185" cy="25" r="3" fill="rgba(0,214,143,.5)"/>
+    <circle cx="175" cy="25" r="3" fill="rgba(0,214,143,.3)"/>
+    <circle cx="185" cy="55" r="3" fill="rgba(0,214,143,.5)"/>
+    <circle cx="175" cy="55" r="3" fill="rgba(0,229,255,.4)"/>
+    <circle cx="185" cy="85" r="3" fill="rgba(0,214,143,.5)"/>
+    <circle cx="175" cy="85" r="3" fill="rgba(201,168,76,.4)"/>
+    <rect x="28" y="20" width="30" height="10" rx="1" stroke="rgba(0,229,255,.15)" stroke-width=".6" fill="rgba(0,229,255,.04)"/>
+    <rect x="28" y="50" width="30" height="10" rx="1" stroke="rgba(0,229,255,.15)" stroke-width=".6" fill="rgba(0,229,255,.04)"/>
+    <rect x="28" y="80" width="30" height="10" rx="1" stroke="rgba(201,168,76,.15)" stroke-width=".6" fill="rgba(201,168,76,.04)"/>
+  </svg>`,
+  // Security shield
+  `<svg width="220" height="100%" viewBox="0 0 220 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="220" height="120" fill="#020c1e"/>
+    <path d="M110 15 L160 35 L160 75 C160 95 110 110 110 110 C110 110 60 95 60 75 L60 35 Z" stroke="rgba(0,229,255,.18)" stroke-width="1" fill="rgba(0,229,255,.04)"/>
+    <path d="M110 28 L148 44 L148 73 C148 89 110 100 110 100 C110 100 72 89 72 73 L72 44 Z" stroke="rgba(0,229,255,.1)" stroke-width=".7" fill="rgba(0,229,255,.03)"/>
+    <line x1="90" y1="62" x2="103" y2="75" stroke="rgba(0,229,255,.4)" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="103" y1="75" x2="128" y2="50" stroke="rgba(0,229,255,.4)" stroke-width="1.5" stroke-linecap="round"/>
+    <circle cx="50" cy="30" r="2" fill="rgba(0,229,255,.2)"/>
+    <circle cx="170" cy="30" r="2" fill="rgba(0,229,255,.2)"/>
+    <circle cx="50" cy="90" r="2" fill="rgba(201,168,76,.2)"/>
+    <circle cx="170" cy="90" r="2" fill="rgba(201,168,76,.2)"/>
+  </svg>`,
+  // Globe/network
+  `<svg width="220" height="100%" viewBox="0 0 220 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="220" height="120" fill="#020c1e"/>
+    <circle cx="110" cy="60" r="45" stroke="rgba(0,229,255,.12)" stroke-width="1" fill="none"/>
+    <ellipse cx="110" cy="60" rx="45" ry="16" stroke="rgba(0,229,255,.08)" stroke-width=".8" fill="none"/>
+    <ellipse cx="110" cy="60" rx="45" ry="32" stroke="rgba(0,229,255,.07)" stroke-width=".8" fill="none"/>
+    <line x1="110" y1="15" x2="110" y2="105" stroke="rgba(0,229,255,.08)" stroke-width=".8"/>
+    <line x1="65" y1="60" x2="155" y2="60" stroke="rgba(0,229,255,.08)" stroke-width=".8"/>
+    <circle cx="80" cy="45" r="3" fill="rgba(0,229,255,.25)"/>
+    <circle cx="140" cy="38" r="3" fill="rgba(201,168,76,.25)"/>
+    <circle cx="125" cy="75" r="3" fill="rgba(0,229,255,.25)"/>
+    <line x1="80" y1="45" x2="140" y2="38" stroke="rgba(0,229,255,.1)" stroke-width=".6"/>
+    <line x1="140" y1="38" x2="125" y2="75" stroke="rgba(201,168,76,.1)" stroke-width=".6"/>
+  </svg>`,
+  // Quantum/waves
+  `<svg width="220" height="100%" viewBox="0 0 220 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="220" height="120" fill="#020c1e"/>
+    <path d="M10 60 C30 30 50 90 70 60 C90 30 110 90 130 60 C150 30 170 90 190 60 C200 45 205 38 210 35" stroke="rgba(0,229,255,.18)" stroke-width="1" fill="none"/>
+    <path d="M10 60 C30 80 50 40 70 60 C90 80 110 40 130 60 C150 80 170 40 190 60" stroke="rgba(201,168,76,.1)" stroke-width=".8" fill="none"/>
+    <circle cx="70" cy="60" r="4" stroke="rgba(0,229,255,.3)" stroke-width="1" fill="rgba(0,229,255,.06)"/>
+    <circle cx="130" cy="60" r="4" stroke="rgba(0,229,255,.3)" stroke-width="1" fill="rgba(0,229,255,.06)"/>
+    <circle cx="190" cy="60" r="4" stroke="rgba(201,168,76,.3)" stroke-width="1" fill="rgba(201,168,76,.06)"/>
+    <line x1="10" y1="15" x2="10" y2="105" stroke="rgba(0,229,255,.06)" stroke-width=".6"/>
+    <line x1="70" y1="15" x2="70" y2="105" stroke="rgba(0,229,255,.06)" stroke-width=".6"/>
+    <line x1="130" y1="15" x2="130" y2="105" stroke="rgba(0,229,255,.06)" stroke-width=".6"/>
+    <line x1="190" y1="15" x2="190" y2="105" stroke="rgba(0,229,255,.06)" stroke-width=".6"/>
+  </svg>`
+];
+
+// Inject scrolling strips
+['s1a','s2a','s3a'].forEach((id,si)=>{
+  const track=document.getElementById(id);
+  if(!track)return;
+  // Each strip gets different SVG mix
+  const count=18;
+  let html='';
+  for(let i=0;i<count;i++){
+    const svgIdx=(si+i)%techSVGs.length;
+    html+=`<div class="img-tile">${techSVGs[svgIdx]}</div>`;
+  }
+  track.innerHTML=html+html; // duplicate for infinite loop
+});
+
+/* ── MARQUEE 1 — TECH PILLS ── */
+const techData=[
+  {name:'Artificial Intelligence',svg:'<circle cx="20" cy="20" r="7" stroke="#00e5ff" stroke-width="1.4"/><circle cx="20" cy="20" r="15" stroke="rgba(0,229,255,.25)" stroke-width=".7" stroke-dasharray="2 3"/><line x1="20" y1="5" x2="20" y2="35" stroke="rgba(0,229,255,.2)" stroke-width=".7"/><line x1="5" y1="20" x2="35" y2="20" stroke="rgba(0,229,255,.2)" stroke-width=".7"/>'},
+  {name:'Cybersecurity',svg:'<path d="M20 3L34 9V21L20 29L6 21V9L20 3Z" stroke="#00e5ff" stroke-width="1.4" fill="rgba(0,229,255,.05)"/><path d="M20 8L28 12V18L20 22L12 18V12L20 8Z" stroke="rgba(0,229,255,.3)" stroke-width=".7" fill="none"/>'},
+  {name:'Quantum Computing',svg:'<circle cx="20" cy="20" r="5" fill="rgba(0,229,255,.2)" stroke="#00e5ff" stroke-width="1.2"/><ellipse cx="20" cy="20" rx="16" ry="6" stroke="#00e5ff" stroke-width="1.1" fill="none" transform="rotate(-30 20 20)"/><ellipse cx="20" cy="20" rx="16" ry="6" stroke="rgba(201,168,76,.5)" stroke-width="1.1" fill="none" transform="rotate(30 20 20)"/>'},
+  {name:'Cloud Computing',svg:'<path d="M8 24 C8 24 10 18 20 18 C30 18 32 24 32 24" stroke="#00e5ff" stroke-width="1.4" stroke-linecap="round" fill="none"/><path d="M11 24 C11 24 12 30 20 30 C28 30 29 24 29 24" stroke="rgba(0,229,255,.45)" stroke-width="1.1" stroke-linecap="round" fill="none"/><line x1="20" y1="18" x2="20" y2="12" stroke="rgba(0,229,255,.4)" stroke-width="1.4" stroke-linecap="round"/><circle cx="20" cy="10" r="2" fill="#00e5ff"/>'},
+  {name:'Neural Networks',svg:'<circle cx="10" cy="14" r="4" stroke="#00e5ff" stroke-width="1.2"/><circle cx="10" cy="26" r="4" stroke="#00e5ff" stroke-width="1.2"/><circle cx="20" cy="8" r="4" stroke="#00e5ff" stroke-width="1.2"/><circle cx="20" cy="20" r="4" stroke="#00e5ff" stroke-width="1.2"/><circle cx="20" cy="32" r="4" stroke="#c9a84c" stroke-width="1.2"/><circle cx="30" cy="16" r="4" stroke="#c9a84c" stroke-width="1.2"/><circle cx="30" cy="28" r="4" stroke="#c9a84c" stroke-width="1.2"/><line x1="14" y1="14" x2="16" y2="9" stroke="rgba(0,229,255,.2)" stroke-width=".6"/><line x1="14" y1="14" x2="16" y2="20" stroke="rgba(0,229,255,.2)" stroke-width=".6"/><line x1="24" y1="20" x2="26" y2="16" stroke="rgba(201,168,76,.2)" stroke-width=".6"/><line x1="24" y1="20" x2="26" y2="28" stroke="rgba(201,168,76,.2)" stroke-width=".6"/>'},
+  {name:'Blockchain',svg:'<rect x="8" y="14" width="10" height="12" rx="2" stroke="#00e5ff" stroke-width="1.3" fill="rgba(0,229,255,.05)"/><rect x="22" y="14" width="10" height="12" rx="2" stroke="#c9a84c" stroke-width="1.3" fill="rgba(201,168,76,.05)"/><line x1="18" y1="20" x2="22" y2="20" stroke="rgba(0,229,255,.4)" stroke-width="1.1"/><line x1="15" y1="14" x2="15" y2="8" stroke="rgba(0,229,255,.25)" stroke-width=".8"/><circle cx="15" cy="6" r="2" fill="rgba(0,229,255,.3)"/><line x1="25" y1="14" x2="25" y2="8" stroke="rgba(201,168,76,.25)" stroke-width=".8"/><circle cx="25" cy="6" r="2" fill="rgba(201,168,76,.3)"/>'},
+  {name:'Deep Tech R&D',svg:'<rect x="5" y="5" width="12" height="12" rx="1.5" stroke="#00e5ff" stroke-width="1.3" fill="rgba(0,229,255,.05)"/><rect x="23" y="5" width="12" height="12" rx="1.5" stroke="rgba(0,229,255,.3)" stroke-width="1.1"/><rect x="5" y="23" width="12" height="12" rx="1.5" stroke="rgba(0,229,255,.3)" stroke-width="1.1"/><rect x="23" y="23" width="12" height="12" rx="1.5" stroke="#c9a84c" stroke-width="1.3" fill="rgba(201,168,76,.05)"/>'},
+  {name:'Edge Computing',svg:'<path d="M5 20 L12 8 L20 20 L28 8 L35 20" stroke="#00e5ff" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 28 L12 16 L20 28 L28 16 L35 28" stroke="rgba(0,229,255,.25)" stroke-width=".8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>'},
+  {name:'Big Data Analytics',svg:'<path d="M4 30 L10 22 L16 26 L22 14 L28 18 L34 8" stroke="#00e5ff" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round"/><circle cx="34" cy="8" r="2" fill="#c9a84c"/>'},
+  {name:'Global SaaS',svg:'<circle cx="20" cy="20" r="15" stroke="#00e5ff" stroke-width="1.1" fill="none"/><ellipse cx="20" cy="20" rx="15" ry="5" stroke="rgba(0,229,255,.2)" stroke-width=".7" fill="none"/><ellipse cx="20" cy="20" rx="15" ry="10" stroke="rgba(0,229,255,.15)" stroke-width=".7" fill="none"/><line x1="20" y1="5" x2="20" y2="35" stroke="rgba(0,229,255,.15)" stroke-width=".7"/>'},
+  {name:'FinTech',svg:'<rect x="5" y="8" width="30" height="22" rx="3" stroke="#c9a84c" stroke-width="1.4" fill="rgba(201,168,76,.04)"/><line x1="5" y1="14" x2="35" y2="14" stroke="rgba(201,168,76,.3)" stroke-width=".9"/><circle cx="9" cy="11" r="1.2" fill="#c9a84c"/><circle cx="13" cy="11" r="1.2" fill="rgba(201,168,76,.45)"/><line x1="10" y1="22" x2="20" y2="22" stroke="rgba(201,168,76,.3)" stroke-width="1.2" stroke-linecap="round"/><line x1="10" y1="26" x2="16" y2="26" stroke="rgba(201,168,76,.2)" stroke-width=".8" stroke-linecap="round"/>'},
+  {name:'BioTech AI',svg:'<path d="M15 8 C15 8 20 14 25 20 C20 26 15 32 15 32" stroke="#00e5ff" stroke-width="1.4" fill="none" stroke-linecap="round"/><path d="M25 8 C25 8 20 14 15 20 C20 26 25 32 25 32" stroke="rgba(201,168,76,.6)" stroke-width="1.4" fill="none" stroke-linecap="round"/><line x1="13" y1="14" x2="27" y2="14" stroke="rgba(0,229,255,.25)" stroke-width=".8"/><line x1="13" y1="20" x2="27" y2="20" stroke="rgba(0,229,255,.25)" stroke-width=".8"/><line x1="13" y1="26" x2="27" y2="26" stroke="rgba(201,168,76,.25)" stroke-width=".8"/>'}
+];
+
+const mq1=document.getElementById('mq1');
+if(mq1){
+  let html='';
+  [...techData,...techData].forEach(t=>{
+    html+=`<div class="tech-pill"><svg class="tp-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">${t.svg}</svg><span class="tp-name">${t.name}</span><div class="tp-bar"></div></div>`;
+  });
+  mq1.innerHTML=html;
+}
+
+/* ── MARQUEE 2 — TOP TECH DOMAINS ── */
+const topDomains=[
+  {n:'google.com',v:'$220B+',c:'Search Giant'},
+  {n:'apple.com',v:'$160B+',c:'Consumer Tech'},
+  {n:'microsoft.com',v:'$140B+',c:'Enterprise Cloud'},
+  {n:'amazon.com',v:'$130B+',c:'E-Commerce / AWS'},
+  {n:'meta.com',v:'$80B+',c:'Social / VR'},
+  {n:'openai.com',v:'$40B+',c:'AI Platform'},
+  {n:'nvidia.com',v:'$50B+',c:'AI Chips / GPU'},
+  {n:'tesla.com',v:'$30B+',c:'EV / AI Robotics'},
+  {n:'anthropic.com',v:'$18B+',c:'AI Safety'},
+  {n:'x.com',v:'$15B+',c:'Social Platform'},
+  {n:'spacex.com',v:'$12B+',c:'Space Technology'},
+  {n:'deepmind.com',v:'$20B+',c:'AI Research'},
+  {n:'shopify.com',v:'$8B+',c:'Commerce SaaS'},
+  {n:'stripe.com',v:'$65B+',c:'FinTech'},
+  {n:'databricks.com',v:'$43B+',c:'Data + AI'},
+  {n:'figma.com',v:'$12B+',c:'Design SaaS'},
+  {n:'notion.so',v:'$10B+',c:'Productivity SaaS'},
+  {n:'palantir.com',v:'$10B+',c:'Data Intelligence'},
+  {n:'cohere.com',v:'$5B+',c:'Enterprise LLM'},
+  {n:'mistral.ai',v:'$6B+',c:'AI Models'},
+];
+const mq2=document.getElementById('mq2');
+if(mq2){
+  let html='';
+  [...topDomains,...topDomains].forEach(d=>{
+    html+=`<div class="dom-pill"><span class="dom-name">${d.n}</span><span class="dom-val">${d.v}</span><span class="dom-cat">${d.c}</span></div>`;
+  });
+  mq2.innerHTML=html;
+}
+
+/* ── PAGE ROUTING ── */
+function showPage(id){
+  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+  document.getElementById('pg-'+id).classList.add('active');
+  window.scrollTo({top:0,behavior:'smooth'});
+  setTimeout(triggerReveals,80);
+}
+function navTo(page,sec){
+  showPage(page);
+  if(sec) setTimeout(()=>{const el=document.getElementById(sec);if(el)el.scrollIntoView({behavior:'smooth',block:'start'})},140);
+}
+
+/* ── SCROLL REVEAL ── */
+function triggerReveals(){
+  const els=document.querySelectorAll('.page.active .rv');
+  const obs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('on')})},{threshold:.1});
+  els.forEach(el=>{el.classList.remove('on');obs.observe(el)});
+}
+triggerReveals();
+
+/* ── 3D TILT ── */
+document.querySelectorAll('[data-tilt]').forEach(c=>{
+  c.addEventListener('mousemove',e=>{
+    const r=c.getBoundingClientRect();
+    const xP=(e.clientX-r.left)/r.width-.5;
+    const yP=(e.clientY-r.top)/r.height-.5;
+    c.style.transform=`perspective(700px) rotateY(${xP*12}deg) rotateX(${-yP*10}deg) translateZ(8px)`;
+  });
+  c.addEventListener('mouseleave',()=>{c.style.transform='perspective(700px) rotateY(0) rotateX(0) translateZ(0)'});
+});
+
+/* ── NAV ACTIVE SCROLL ── */
+const secMap={hero:'nl-home',value:'nl-val',usecases:'nl-uc',pricing:'nl-pr',contact:'nl-ct'};
+window.addEventListener('scroll',()=>{
+  if(!document.getElementById('pg-home').classList.contains('active'))return;
+  let cur='hero';
+  Object.keys(secMap).forEach(id=>{const el=document.getElementById(id);if(el&&window.scrollY>=el.offsetTop-140)cur=id});
+  Object.values(secMap).forEach(id=>{const el=document.getElementById(id);if(el)el.classList.remove('active')});
+  const a=document.getElementById(secMap[cur]);if(a)a.classList.add('active');
+  const nav=document.getElementById('mainNav');
+  nav.style.background=window.scrollY>80?'rgba(1,6,16,.97)':'rgba(1,6,16,.9)';
+});
+
+/* ── FORM SUBMIT ── */
+function handleForm(e){
+  const email=document.querySelector('[name="Email"]').value.trim();
+  const agree=document.getElementById('agree').checked;
+  const fm=document.getElementById('fMsg'),fe=document.getElementById('fErr');
+  if(!email||!agree){e.preventDefault();fe.style.display='block';fm.style.display='none';setTimeout(()=>fe.style.display='none',5000);return;}
+  fm.style.display='block';fe.style.display='none';
+  setTimeout(()=>fm.scrollIntoView({behavior:'smooth',block:'center'}),200);
+}
+
+/* ── HERO PARALLAX ── */
+document.addEventListener('mousemove',e=>{
+  const o=document.querySelector('.img-bg-overlay');
+  if(!o)return;
+  const x=(e.clientX/window.innerWidth-.5)*10;
+  const y=(e.clientY/window.innerHeight-.5)*6;
+  o.style.transform=`translate(${x}px,${y}px) scale(1.02)`;
+});
+</script>
 </body>
 </html>
